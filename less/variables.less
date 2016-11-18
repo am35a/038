@@ -1,0 +1,55 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+@bp-larger-than-mobile    : 400px;
+@bp-larger-than-phablet   : 550px;
+@bp-larger-than-tablet    : 750px;
+@bp-larger-than-desktop   : 1000px;
+@bp-larger-than-desktophd : 1200px;
+
+// Colors
+@font-color         : #cfd2da;
+@link-color         : @primary-color;
+@background-color   : #252830;
+@border-color       : #434857;
+
+@dark-color         : darken(@background-color, 5%);
+
+@primary-color      : #1ca8dd; //blue
+@success-color      : #1bc98e; //green
+@info-color         : #9f86ff; //violet
+@warning-color      : #e4d836; //yello
+@danger-color       : #e64759; //red
+
+// Typography
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic';
+@font-family: 'Ubuntu', sans-serif;
+
+// Iconography
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+// Grid Variables
+@container-width: 960px;
+@container-width-larger-than-mobile: 85%;
+@container-width-larger-than-phablet: 80%;
+@total-columns: 12;
+@column-width: 100 / @total-columns; // calculates individual column width based off of # of columns
+@column-margin: 4%; // space between columns
+
+// Misc
+@global-radius: 4px;
+
+// Functions
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.grid-column-width(@n) {
+    width: @column-width * @n - (@column-margin*(@total-columns - @n)/@total-columns);
+}
+
+.grid-offset-length(@n) {
+    margin-left: @column-width * @n - (@column-margin*(@total-columns - @n)/@total-columns) + @column-margin * 2;
+}
+
+.grid-offset-length-first-child(@n) {
+    margin-left: @column-width * @n - (@column-margin*(@total-columns - @n)/@total-columns) + @column-margin;
+}

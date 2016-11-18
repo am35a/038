@@ -1,0 +1,1054 @@
+/*
+* 038 V1.0 based on Skeleton V2.0.4
+* 038 by Arthur Selimov / 2016
+* http://038.mobitoon.ru
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* Index
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Navbars
+- Forms
+- Groups
+- Lists
+- Code
+- Cards
+- Tables
+- Spacing
+- Utilities
+- Misc
+- Clearing
+- Media Queries
+*/
+
+// Load variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@import "variables.less";
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: @container-width;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: @bp-larger-than-mobile) {
+    .container {
+        width: @container-width-larger-than-mobile;
+        padding: 0;
+    }
+}
+
+/* For devices larger than 550px */
+@media (min-width: @bp-larger-than-phablet) {
+    .container {
+        width: @container-width-larger-than-phablet;
+    }
+    
+    .column,
+    .columns {
+        margin-left: @column-margin;
+    }
+    
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+
+
+    .one.column,
+    .one.columns          { .grid-column-width(1);  }
+    .two.columns          { .grid-column-width(2);  }
+    .three.columns        { .grid-column-width(3);  }
+    .four.columns         { .grid-column-width(4);  }
+    .five.columns         { .grid-column-width(5);  }
+    .six.columns          { .grid-column-width(6);  }
+    .seven.columns        { .grid-column-width(7);  }
+    .eight.columns        { .grid-column-width(8);  }
+    .nine.columns         { .grid-column-width(9);  }
+    .ten.columns          { .grid-column-width(10); }
+    .eleven.columns       { .grid-column-width(11); }
+    .twelve.columns       { width: 100%; margin-left: 0;  }
+    
+    .one-third.column     { .grid-column-width(4);  }
+    .two-thirds.column    { .grid-column-width(8);  }
+    
+    .one-half.column      { .grid-column-width(6);  }
+    
+    
+    /* Offsets */
+    .offset-by-one.column,
+    .offset-by-one.columns       { .grid-offset-length(1); &:first-child { .grid-offset-length-first-child(1) } }
+    .offset-by-two.column,
+    .offset-by-two.columns       { .grid-offset-length(2); &:first-child { .grid-offset-length-first-child(2) } }
+    .offset-by-three.column,
+    .offset-by-three.columns     { .grid-offset-length(3); &:first-child { .grid-offset-length-first-child(3) } }
+    .offset-by-four.column,
+    .offset-by-four.columns      { .grid-offset-length(4); &:first-child { .grid-offset-length-first-child(4) } }
+    .offset-by-five.column,
+    .offset-by-five.columns      { .grid-offset-length(5); &:first-child { .grid-offset-length-first-child(5) } }
+    .offset-by-six.column,
+    .offset-by-six.columns       { .grid-offset-length(6); &:first-child { .grid-offset-length-first-child(6) } }
+    .offset-by-seven.column,
+    .offset-by-seven.columns     { .grid-offset-length(7); &:first-child { .grid-offset-length-first-child(7) } }
+    .offset-by-eight.column,
+    .offset-by-eight.columns     { .grid-offset-length(8); &:first-child { .grid-offset-length-first-child(8) } }
+    .offset-by-nine.column,
+    .offset-by-nine.columns      { .grid-offset-length(9); &:first-child { .grid-offset-length-first-child(9) } }
+    .offset-by-ten.column,
+    .offset-by-ten.columns       { .grid-offset-length(10); &:first-child { .grid-offset-length-first-child(10) } }
+    .offset-by-eleven.column,
+    .offset-by-eleven.columns    { .grid-offset-length(11); &:first-child { .grid-offset-length-first-child(11) } }
+    
+    
+    .offset-by-one-third.column,
+    .offset-by-one-third.columns  { .grid-offset-length(4);  }
+    .offset-by-two-thirds.column,
+    .offset-by-two-thirds.columns { .grid-offset-length(8);  }
+    .offset-by-one-half.column,
+    .offset-by-one-half.columns   { .grid-offset-length(6);  }
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: @font-family;
+    color: @font-color;
+    background-color: @background-color;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;  }
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem;  }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem;  }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;       }
+
+/* Larger than phablet */
+@media (min-width: @bp-larger-than-phablet) {
+    h1 { font-size: 5.0rem; }
+    h2 { font-size: 4.2rem; }
+    h3 { font-size: 3.6rem; }
+    h4 { font-size: 3.0rem; }
+    h5 { font-size: 2.4rem; }
+    h6 { font-size: 1.5rem; }
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+    color: @link-color;
+    cursor: default;
+    &:hover {
+        color: darken(@link-color, 5%);
+    }
+    &[href] {
+        cursor: pointer;
+    }
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: lighten(@border-color, 27%);
+    text-align: center;
+    font-family: @font-family;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: @background-color;
+    border-radius: @global-radius;
+    border: 1px solid @border-color;
+    box-sizing: border-box;
+    //cursor: pointer;
+}
+
+.button:hover:not(.disabled),
+button:hover:not(:disabled),
+input[type="submit"]:hover:not(:disabled),
+input[type="reset"]:hover:not(:disabled),
+input[type="button"]:hover:not(:disabled),
+.button:focus:not(.disabled),
+button:focus:not(:disabled),
+input[type="submit"]:focus:not(:disabled),
+input[type="reset"]:focus:not(:disabled),
+input[type="button"]:focus:not(:disabled) {
+    background-color: @border-color;
+    color: #fff;
+    outline: 0;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    &[class*="button-"] {
+        color: #fff;
+    }
+    &.button-primary {
+        background-color: @primary-color;
+        border-color: @primary-color;
+    }
+    &.button-primary:hover:not(.disabled):not(:disabled),
+    &.button-primary:focus:not(.disabled):not(:disabled) {
+        background-color: darken(@primary-color, 10%);
+        border-color: darken(@primary-color, 10%);
+    }
+    &.button-success {
+        background-color: @success-color;
+        border-color: @success-color;
+    }
+    &.button-success:hover:not(.disabled):not(:disabled),
+    &.button-success:focus:not(.disabled):not(:disabled) {
+        background-color: darken(@success-color, 10%);
+        border-color: darken(@success-color, 10%);
+    }
+    &.button-info {
+        background-color: @info-color;
+        border-color: @info-color;
+    }
+    &.button-info:hover:not(.disabled):not(:disabled),
+    &.button-info:focus:not(.disabled):not(:disabled) {
+        background-color: darken(@info-color, 10%);
+        border-color: darken(@info-color, 10%);
+    }
+    &.button-warning {
+        background-color: @warning-color;
+        border-color: @warning-color;
+    }
+    &.button-warning:hover:not(.disabled):not(:disabled),
+    &.button-warning:focus:not(.disabled):not(:disabled) {
+        background-color: darken(@warning-color, 10%);
+        border-color: darken(@warning-color, 10%);
+    }
+    &.button-danger {
+        background-color: @danger-color;
+        border-color: @danger-color;
+    }
+    &.button-danger:hover:not(.disabled):not(:disabled),
+    &.button-danger:focus:not(.disabled):not(:disabled) {
+        background-color: darken(@danger-color, 10%);
+        border-color: darken(@danger-color, 10%);
+    }
+}
+
+.button,
+button {
+    > .material-icons {
+        line-height: 0;
+        -ms-transform: translate(-12px) translateY(8px);
+        -webkit-transform: translate(-12px) translateY(8px);
+        -moz-transform: translate(-12px) translateY(8px);
+        transform: translate(-12px) translateY(8px);
+    }
+    &.icons {
+        width: 38px;
+        padding: 0;
+        > .material-icons {
+            line-height: 0;
+            -ms-transform: translateY(8px);
+            -webkit-transform: translateY(8px);
+            -moz-transform: translateY(8px);
+            transform: translateY(8px);
+        }
+    }
+    &.icons-primary > .material-icons { color: @primary-color; }
+    &.icons-success > .material-icons { color: @success-color; }
+    &.icons-info    > .material-icons { color: @info-color; }
+    &.icons-warning > .material-icons { color: @warning-color; }
+    &.icons-danger  > .material-icons { color: @danger-color; }
+}
+
+/* Dropdown button */
+.button-dropdown {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.button-dropdown .dropdown-arrow:after {
+    position: absolute;
+    margin-left: .5rem;
+    content: "▼";
+}
+
+.button-dropdown ul {
+    display: none;
+    position: absolute;
+    top: 38px;
+    margin: 0;
+    padding-top: 1rem;
+    list-style: none;
+}
+
+.button-dropdown ul li {
+    float: none;
+    > * {
+        min-width: 100%;
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+    &:first-child > * {
+        border-top-left-radius: @global-radius;
+        border-top-right-radius: @global-radius;
+    }
+    &:last-child > * {
+        border-bottom-right-radius: @global-radius;
+        border-bottom-left-radius: @global-radius;
+    }
+    &:not(:last-child) > * {
+        border-bottom: 0;
+    }
+}
+
+.button-dropdown li {
+    margin: 0;
+    &:hover > ul,
+    .button:focus + ul,
+    button:focus + ul {
+        display: block;
+        z-index: 1;
+    }
+}
+
+/* Disabled button */
+.mixin-disabled {
+    color: #fff;
+    cursor: default;
+    opacity: .25;
+}
+
+button:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled,
+input[type="button"]:disabled,
+.button.disabled {
+    .mixin-disabled;
+}
+
+.button-dropdown li > * {
+    &.disabled,
+    &:disabled {
+        + ul {
+            display: none;
+        }
+    }
+}
+
+/* Navbars
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+nav {
+    padding: 0 1.5rem;
+    border-bottom: 1px solid @dark-color;
+    border-radius: 0;
+    background-color: @border-color;
+    margin: 0 0 2.5rem 0;
+}
+
+.container nav {
+    padding: 0 1.5rem;
+    border: 0;
+    border-radius: @global-radius;
+    background-color: @border-color;
+    margin: 1rem 0 2.5rem 0;
+}
+
+nav ul {
+    overflow: auto;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+    margin: 0;
+    list-style: none;
+    letter-spacing: .1rem;
+    line-height: 3rem;
+}
+
+nav li a {
+    display: block;
+    color: @font-color;
+    text-decoration: none;
+    padding: 1.5rem;
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+nav li a .material-icons {
+    line-height: 0;
+    -ms-transform: translateY(6px);
+    -webkit-transform: translateY(6px);
+    -moz-transform: translateY(6px);
+    transform: translateY(6px);
+}
+
+nav .logo {
+    float: left;
+    height: 6rem;
+    img {
+        height: 100%;
+    }
+}
+
+.nav-dropdown ul {
+    display: none;
+    position: absolute;
+    margin: 0;
+    list-style: none;
+    background: @border-color;
+    border-radius: 0 0 4px 4px;
+}
+
+.nav-dropdown ul li {
+    float: none;
+}
+
+.nav-dropdown ul li a {
+    padding: .75rem 1.5rem;
+}
+
+.nav-dropdown {
+    margin: 0;
+    &:hover > ul {
+        display: block;
+    }
+}
+
+
+/* Primary nav*/
+nav.nav-primary {
+    border-bottom: 1px solid @border-color;
+    background-color: @background-color;
+}
+
+.container nav.nav-primary {
+    border-top: 1px solid @border-color;
+    border-radius: 0;
+}
+
+nav.nav-primary li {
+    a:hover,
+    a:focus
+        { background-color: @border-color; }
+    &.primary a:hover,
+    &.primary a:focus
+        { background-color: darken(@primary-color, 10%); }
+    &.success a:hover,
+    &.success a:focus
+        { background-color: darken(@success-color, 10%); }
+    &.info a:hover,
+    &.info a:focus
+        { background-color: darken(@info-color, 10%); }
+    &.warning a:hover,
+    &.warning a:focus
+        { background-color: darken(@warning-color, 10%); }
+    &.danger a:hover,
+    &.danger a:focus
+        { background-color: darken(@danger-color, 10%); }
+}
+
+header.u-stick-top {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateX(-50%);
+    z-index: 1000;
+    + * {
+        padding-top: 9rem;
+    }
+}
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+form {
+    position: relative;
+}
+
+textarea,
+select {
+    &:disabled {
+        color: #fff;
+        opacity: .25;
+    }
+    height: 38px;
+    padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+    background-color: @border-color;
+    border: 1px solid @border-color;
+    border-radius: @global-radius;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 65px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    /* Removes awkward default styles on some inputs for iOS */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea:focus,
+select:focus {
+    background-color: #fff;
+    color: @dark-color;
+    border: 1px solid #fff !important;
+    outline: 0;
+}
+
+input {
+    &[type="email"],
+    &[type="number"],
+    &[type="search"],
+    &[type="text"],
+    &[type="tel"],
+    &[type="url"],
+    &[type="password"] {
+        &:disabled {
+            color: #fff;
+            opacity: .25;
+        }
+        height: 38px;
+        padding: 6px 10px; // The 6px vertically centers text on FF, ignored by Webkit
+        background-color: @border-color;
+        border: 1px solid @border-color;
+        border-radius: @global-radius;
+        box-shadow: none;
+        box-sizing: border-box;
+        /* Removes awkward default styles on some inputs for iOS */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+    &[type="email"]:focus,
+    &[type="number"]:focus,
+    &[type="search"]:focus,
+    &[type="text"]:focus,
+    &[type="tel"]:focus,
+    &[type="url"]:focus,
+    &[type="password"]:focus {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: @dark-color;
+        outline: 0;
+    }
+}
+
+label,
+legend {
+    position: relative;
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    * {
+        cursor: pointer;
+    }
+}
+
+fieldset {
+    padding: 0;
+    border-width: 0;
+}
+
+input {
+    &[type="checkbox"],
+    &[type="radio"] {
+        display: none;
+    }
+    &[type="checkbox"]:checked ~ .checkbox,
+    &[type="radio"]:checked ~ .radio {
+        border: 1px solid @primary-color;
+        background: @primary-color;
+    }
+    &[type="checkbox"],
+    &[type="radio"] {
+        &:disabled + *,
+        &:disabled + * + * {
+            color: #fff;
+            cursor: default;
+            opacity: .25;
+        }
+    }
+}
+
+
+
+.checkbox,
+.radio {
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid @background-color;
+    background: darken(@border-color, 5%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);    
+}
+
+.checkbox {
+    border-radius: @global-radius;
+}
+
+.radio {
+    border-radius: 50%;
+}
+
+label:hover > input {
+    &[type="checkbox"]:not(:disabled) + .checkbox,
+    &[type="radio"]:not(:disabled) + .radio {
+        background-color: @border-color;
+    }
+    &[type="checkbox"]:checked:not(:disabled) + .checkbox,
+    &[type="radio"]:checked:not(:disabled) + .radio {
+        background-color: darken(@primary-color, 10%);
+        border-color: darken(@primary-color, 15%);
+    }
+}
+
+label > .label-body {
+    display: inline-block;
+    margin-left: calc(~".5rem + 18px");
+}
+
+/* Groups
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul.group {
+    display: inline-table;
+}
+ul.group label {
+    display: table-caption;
+    white-space: nowrap;
+}
+ul.group > li {
+    display: table-cell;
+    list-style-type: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    input:not([type="submit"]),
+    input:not([type="reset"]),
+    input:not([type="button"]) {
+        width: 100%;
+    }
+    > *,
+    > * > * > *,
+    > input[type="submit"],
+    > input[type="reset"],
+    > input[type="button"], {
+        margin-bottom: 0;
+    }
+    > *,
+    > * > * > * {
+        border-radius: 0;
+    }
+    &:first-of-type > *,
+    &:first-of-type > * > * > * {
+        border-top-left-radius: @global-radius;
+        border-bottom-left-radius: @global-radius;
+    }
+    &:last-of-type > *,
+    &:last-of-type > * > * > * {
+        border-top-right-radius: @global-radius;
+        border-bottom-right-radius: @global-radius;
+    }
+    &:not(:last-child) > *,
+    &:not(:last-child) > * > * > * {
+        border-right: 0;
+    }
+}
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul {
+    list-style: circle inside;
+}
+
+ol {
+    list-style: decimal inside;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin-top: 0;
+    ul,
+    ol {
+        list-style: disc inside;
+        margin: 1.5rem 0 1.5rem 3rem;
+        font-size: 90%;
+    }
+}
+
+ol {
+    ol,
+    ul {
+        list-style: disc inside;
+        margin: 1.5rem 0 1.5rem 3rem;
+        font-size: 90%;
+    }
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+code {
+    padding: .2rem .5rem;
+    margin: 0 .5rem;
+    color: lighten(@background-color, 13.5%);
+    font-size: 90%;
+    white-space: nowrap;
+    background: darken(@background-color, 5%);
+    border-radius: @global-radius;
+}
+
+pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre-wrap;
+}
+
+/* Cards
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cards {
+//    display: flex;
+//    flex-wrap: wrap;
+//    align-items: baseline;
+    display: table;
+    width: 100%;
+    word-spacing: -.36em;
+    > .card {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        word-spacing: normal;
+    }
+}
+
+.card {
+    width: 100%;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    border: 1px solid @border-color;
+    border-radius: @global-radius;
+    overflow: hidden;
+    background-color: @background-color;
+    *:last-child {
+        margin-bottom: 0;
+    }
+    .block {
+        padding: 1.5rem;
+    }
+}
+
+/* For devices larger than 550px */
+@media (min-width: @bp-larger-than-phablet) {
+    .cards > .card {
+        margin-left: @column-margin;
+        .grid-column-width(6);
+        &:nth-child(2n+1) {
+            margin-left: 0;
+        }
+    }
+}
+
+/* For devices larger than 1000px */
+@media (min-width: @bp-larger-than-desktop) {
+    .cards > .card {
+        margin-left: @column-margin;
+        .grid-column-width(4);
+        &:nth-child(2n+1) {
+            margin-left: @column-margin;
+        }
+        &:nth-child(3n+1) {
+            margin-left: 0;
+        }
+    }
+}
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+tr:hover {
+    background-color: darken(@background-color, 2.5%);
+}
+
+th,
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid @border-color;
+}
+
+th {
+    background-color: @border-color;
+    border-bottom: 0px;
+    &:first-child {
+        border-radius: @global-radius 0 0 0;
+    }
+    &:last-child {
+        border-radius: 0 @global-radius 0 0;
+    }
+}
+
+tr:first-child td {
+    border-top: 1px solid @border-color;
+}
+
+thead + tbody tr:first-child td {
+    border-top: 0;
+}
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    margin-bottom: 1rem;
+}
+
+.card,
+input,
+textarea,
+select,
+fieldset {
+    margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+    margin-bottom: 2.5rem;
+}
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.u-global-radius,
+.u-global-radius div,
+.u-global-radius div div {
+    border-radius: @global-radius;
+}
+
+.u-border-off {
+    border: 0;
+}
+
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.u-max-full-width {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.u-pull-right {
+    float: right;
+}
+
+.u-pull-left {
+    float: left;
+}
+
+.u-align-left {
+    text-align: left;
+}
+
+.u-align-center {
+    text-align: center;
+}
+
+.u-align-right {
+    text-align: right;
+}
+
+.u-color-primary { color: @primary-color; }
+.u-color-success { color: @success-color; }
+.u-color-info    { color: @info-color; }
+.u-color-warning { color: @warning-color; }
+.u-color-danger  { color: @danger-color; }
+
+.u-background-primary {
+    background-color: @primary-color!important;
+    border-color: @primary-color;
+}
+.u-background-success {
+    background-color: @success-color!important;
+    border-color: @success-color;
+}
+.u-background-info {
+    background-color: @info-color!important;
+    border-color: @info-color;
+}
+.u-background-warning {
+    background-color: @warning-color!important;
+    border-color: @warning-color;
+    color: @background-color;
+    a {
+        color: @background-color;
+    }
+    a:hover {
+        color: darken(@background-color, 5%);
+    }
+}
+.u-background-danger {
+    background-color: @danger-color!important;
+    border-color: @danger-color;
+}
+
+[class*="u-background"]:not(.u-background-warning) {
+    color: #fff;
+}
+
+[class*="u-background"]:not(.u-background-warning) a {
+    color: #fff;
+    &:hover {
+        color: darken(#fff, 5%);
+    }
+}
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+hr {
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+    border-width: 0;
+    border-top: 1px solid @border-color;
+}
+
+figure hr {
+    border-top: 1px solid lighten(@background-color, 54%);
+}
+
+figure[class*="u-background-"] {
+    padding: 1rem 1.5rem;
+    border-radius: @global-radius;
+    background-color: @dark-color;
+    color: #fff;
+}
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Self Clearing Goodness */
+
+.container:after,
+.row:after,
+.u-cf {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (min-width: @bp-larger-than-mobile) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: @bp-larger-than-phablet) {}
+
+/* Larger than tablet */
+@media (min-width: @bp-larger-than-tablet) {}
+
+/* Larger than desktop */
+@media (min-width: @bp-larger-than-desktop) {}
+
+/* Larger than Desktop HD */
+@media (min-width: @bp-larger-than-desktophd) {}

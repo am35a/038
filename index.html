@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>038 - responsive CSS pattern</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="038 the modern, simple and responsive CSS pattern">
+        <meta name="keywords" content="html, html5, css, css3, grid, typography, buttons, navbars, forms, front-end, frameworks, lists, cards, tables, utilities">
+        <meta name="author" content="Arthur A. Selimov">
+        
+        <meta property="og:locale"              content="en-EN">
+        <meta property="og:type"                content="website">
+        <meta property="og:site_name"           content="MOBITOON">
+        <meta property="og:url"                 content="http://038.mobitoon.ru">
+        <meta property="og:title"               content="038 - responsive CSS pattern">
+        <meta property="og:description"         content="038 the modern, simple and responsive CSS pattern">
+        <meta property="og:image"               content="http://038.mobitoon.ru/img/share-logo.png">
+        
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/038.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Adds HTML5 element support for earlier versions of IE -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body id="home">
+        <header class="u-stick-top">
+            <nav role="navigation">
+                <div class="container">
+                    <a class="logo" href="index.html#home" target="_self" title="038 logo" role="banner">
+                        <img src="img/logo.svg" alt="Logo" title="038 logo">
+                    </a>
+                    <ul>
+                        <li class="nav-dropdown">
+                            <a title="Content">Content</a>
+                            <ul>
+                                <li><a href="index.html#grid"       target="_self" title="Grid" role="link">Grid</a></li>
+                                <li><a href="index.html#typography" target="_self" title="Typography" role="link">Typography</a></li>
+                                <li><a href="index.html#buttons"    target="_self" title="Buttons" role="link">Buttons</a></li>
+                                <li><a href="index.html#navbars"    target="_self" title="Navbars" role="link">Navbars</a></li>
+                                <li><a href="index.html#forms"      target="_self" title="Forms" role="link">Forms</a></li>
+                                <li><a href="index.html#groups"     target="_self" title="Groups" role="link">Groups</a></li>
+                                <li><a href="index.html#disabling"  target="_self" title="Disabling" role="link">Disabling</a></li>
+                                <li><a href="index.html#lists"      target="_self" title="Lists" role="link">Lists</a></li>
+                                <li><a href="index.html#cards"      target="_self" title="Cards" role="link">Cards</a></li>
+                                <li><a href="index.html#tables"     target="_self" title="Tables" role="link">Tables</a></li>
+                                <li><a href="index.html#utilities"  target="_self" title="Utilities" role="link">Utilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="examples.html" target="_self" title="Examples" role="link">Examples</a></li>
+                        <li class="u-pull-right"><a href="http://www.mobitoon.ru" target="_self" title="About" role="link">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main role="main">
+            <article class="container" role="article">
+                <header class="row u-align-center">
+                    <h1>038</h1>
+                    <p>The modern, simple & responsive<br>CSS pattern</p>
+                    <a class="button button-primary" href="http://ui.mobitoon.ru/038.zip" title="Download CSS pattern archive" role="button"><i class="material-icons">&#xE2C4;</i> download</a>
+                </header>
+                
+                <hr>
+
+                <section class="row" role="note">
+                    <div class="card ten offset-by-one columns u-align-center u-background-info u-border-off">
+                        <div class="block">
+                            <h2 class="block">Rush with 038!</h2>
+                            <p class="u-align-left">
+                                If <a href="http://getskeleton.com" target="_blank" alt="Skeleton">Skeleton</a> is quite the thing, but you are looking for something more... Get the <b>038</b>!
+                                <br>
+                                <b>038</b> is the CSS pattern based on Skeleton boilerplate syntax model. <b>038</b> have got no problems with grid offset, it helps with buttons group, navbars, icons, colors and so on without JS. And last but not least 038 still supports IE9.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="media-queries" role="region">
+                    <h3>Media queries support</h3>
+                    <div class="row">
+                        <div class="two offset-by-one columns">Desktop HD:<br>1200px</div>
+                        <div class="two columns">Desktop:<br>1000px</div>
+                        <div class="two columns">Tablet:<br>750px</div>
+                        <div class="two columns">Phablet:<br>550px</div>
+                        <div class="two columns">Mobile:<br>400px</div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="grid" role="region">
+                    <h3>Grid</h3>
+                    <p>12-column fluid grid with a max width of 960px for browser/device at smaller sizes.</p>
+                    <div class="row u-global-radius row-highlight">
+                        <div class="row u-align-center">
+                            <div class="one column">One</div>
+                            <div class="eleven columns">Eleven</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="two columns">Two</div>
+                            <div class="ten columns">Ten</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="three columns">Three</div>
+                            <div class="nine columns">Nine</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="four columns">Four</div>
+                            <div class="eight columns">Eight</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="five columns">Five</div>
+                            <div class="seven columns">Seven</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="six columns">Six</div>
+                            <div class="six columns">Six</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="seven columns">Seven</div>
+                            <div class="five columns">Five</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="eight columns">Eight</div>
+                            <div class="four  columns">Four</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="nine columns">Nine</div>
+                            <div class="three columns">Three</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="ten columns">Ten</div>
+                            <div class="two columns">Two</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="eleven columns">Eleven</div>
+                            <div class="one column">One</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="twelve columns">Twelve</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="one-third column">1/3</div>
+                            <div class="two-thirds column">2/3</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="one-half column">1/2</div>
+                            <div class="one-half column">1/2</div>
+                        </div>
+                        <div class="row u-align-center">
+                            <div class="two offset-by-two columns">Two</div>
+                            <div class="six offset-by-two columns">Six</div>
+                        </div>
+                    </div>
+                    <div class="row" roll="definition">
+                        <div class="six columns">
+                            <pre><code>
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="one column"&gt;One&lt;/div&gt;
+        &lt;div class="eleven columns"&gt;Eleven&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="two columns"&gt;Two&lt;/div&gt;
+        &lt;div class="ten columns"&gt;Ten&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="one-third column"&gt;1/3&lt;/div&gt;
+        &lt;div class="two-thirds column"&gt;2/3&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="one-half column"&gt;1/2&lt;/div&gt;
+        &lt;div class="one-half column"&gt;1/2&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                        <div class="six columns">
+                            <pre><code>
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="one offset-by-one column"&gt;One&lt;/div&gt;
+        &lt;div class="ten columns"&gt;Ten&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="typography" role="region">
+                    <h3>Typography</h3>
+                    <div class="row">
+                        <div class="six columns">
+                            <h4>Base type</h4>
+                            <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
+                            <p><strong>The typography base</strong> is <a href="https://fonts.google.com/specimen/Ubuntu">Ubuntu</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+                            <pre roll="definition"><code>
+&lt;p&gt;
+    The base type is 15px over 1.6 line height (24px)
+&lt;/p&gt;
+
+&lt;strong&gt;Bolded&lt;/strong&gt;
+&lt;em&gt;Italicized&lt;/em&gt;
+&lt;a&gt;Colored&lt;/a&gt;
+&lt;u&gt;Underlined&lt;/u&gt;
+                            </code></pre>
+                        </div>
+                        <div class="six columns">
+                            <h4>Standard headings</h4>
+                            <p class="u-align-center">
+                                <span class="h h1">Heading</span>
+                                <span class="h h2">Heading</span>
+                                <span class="h h3">Heading</span>
+                                <span class="h h4">Heading</span>
+                                <span class="h h5">Heading</span>
+                                <span class="h h6">Heading</span>
+                            </p>
+                            <pre roll="definition"><code>
+&lt;h1&gt;Heading&lt;/h1&gt;    &lt;!-- 50px / 5rem --&gt;
+&lt;h2&gt;Heading&lt;/h2&gt;    &lt;!-- 42px / 4.2rem --&gt;
+&lt;h3&gt;Heading&lt;/h3&gt;    &lt;!-- 36px / 3.6rem --&gt;
+&lt;h4&gt;Heading&lt;/h4&gt;    &lt;!-- 30px / 3rem --&gt;
+&lt;h5&gt;Heading&lt;/h5&gt;    &lt;!-- 24px / 2.4rem --&gt;
+&lt;h6&gt;Heading&lt;/h6&gt;    &lt;!-- 15px / 1.5rem --&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="buttons" role="region">
+                    <h3>Buttons</h3>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h4>Standard buttons</h4>
+                            <!-- Standard buttons -->
+                            <button>Button element</button>
+                            <a class="button" href="#">Anchor button</a>
+                            <input value="submit input" type="submit">
+                            <input value="button input" type="button">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h4>Primary buttons</h4>
+                            <!-- Primary buttons -->
+                            <button class="button-primary">Button element</button>
+                            <a class="button button-primary" href="#">Anchor button</a>
+                            <input class="button-primary" value="submit input" type="submit">
+                            <input class="button-primary" value="button input" type="button">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h4>Primary color buttons</h4>
+                            <!-- Primary color buttons -->
+                            <button class="button-success">Button element</button>
+                            <a class="button button-info" href="#">Anchor button</a>
+                            <input class="button-warning" value="submit input" type="submit">
+                            <input class="button-danger" value="button input" type="button">
+                        </div>
+                    </div>
+                    <div class="row" roll="definition">
+                        <div class="twelve columns">
+                            <pre><code>
+&lt;!-- Standard buttons --&gt;
+&lt;button&gt;Button element&lt;/button&gt;
+&lt;a class="button" href="#"&gt;Anchor button&lt;/a&gt;
+&lt;input value="submit input" type="submit"&gt;
+&lt;input value="button input" type="button"&gt;
+
+&lt;!-- Primary buttons --&gt;
+&lt;button class="button-primary"&gt;Button element&lt;/button&gt;
+&lt;a class="button button-primary" href="#"&gt;Anchor button&lt;/a&gt;
+&lt;input class="button-primary" value="submit input" type="submit"&gt;
+&lt;input class="button-primary" value="button input" type="button"&gt;
+
+&lt;!-- Primary color buttons --&gt;
+&lt;button class="button-success"&gt;Button element&lt;/button&gt;
+&lt;a class="button button-info" href="#"&gt;Anchor button&lt;/a&gt;
+&lt;input class="button-warning" value="submit input" type="submit"&gt;
+&lt;input class="button-danger" value="button input" type="button"&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h4>Icon, standard, primary color & color icon buttons</h4>
+                            <p>The iconography base is <a href="https://design.google.com/icons/">Material icons</a> served by Google. Use more at Google API to put it to a code.</p>
+                            <p class="u-color-warning">Only "a" and "button" tags supports icon button styles!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="five columns">
+                            <h5>Icon buttons</h5>
+                            <!-- Icons buttons -->
+                            <button class="icons"><i class="material-icons">&#xE854;</i></button>
+                            <a class="button icons" href="#"><i class="material-icons">&#xE928;</i></a>
+                            <br><br>
+                            <h5>Standard icon buttons</h5>
+                            <!-- Standard icon buttons -->
+                            <button><i class="material-icons">&#xE877;</i>Button element</button>
+                            <a class="button" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
+                            <br><br>
+                            <h5>Standard color icon buttons</h5>
+                            <!-- Standard color icon buttons -->
+                            <button class="icons-success"><i class="material-icons">&#xE877;</i>Button element</button>
+                            <a class="button icons-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
+                            <br><br>
+                            <h5>Primary icon buttons</h5>
+                            <!-- Primary icon buttons -->
+                            <button class="button-success"><i class="material-icons">&#xE877;</i>Button element</button>
+                            <a class="button button-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
+                        </div>
+                        <div class="seven columns" roll="definition">
+                            <pre><code>
+&lt;!-- Standard icon buttons --&gt;
+&lt;button class="<span class="u-color-success">icons</span>"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;add_shopping_cart&lt;/i&gt;</span>&lt;/button&gt;
+&lt;a class="button <span class="u-color-success">icons</span>" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;remove_shopping_cart&lt;/i&gt;</span>&lt;/a&gt;
+
+&lt;!-- Standard icon buttons --&gt;
+&lt;button&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
+&lt;a class="button" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
+
+&lt;!-- Standard color icon buttons --&gt;
+&lt;button class="<span class="u-color-success">icons-success</span>"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
+&lt;a class="button <span class="u-color-success">icons-danger</span>" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
+
+&lt;!-- Primary icon buttons --&gt;
+&lt;button class="button-success"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
+&lt;a class="button button-danger" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="five columns">
+                            <h5>Dropdown buttons</h5>
+                            <!-- Dropdown buttons -->
+                            <ul class="button-dropdown">
+                                <li>
+                                    <button class="dropdown-arrow">Button element</button>
+                                    <ul>
+                                        <li>
+                                            <button>Button element</button>
+                                        </li>
+                                        <li>
+                                            <a class="button icons-success" href="#"><i class="material-icons">&#xE877;</i>Anchor button</a>
+                                        </li>
+                                        <li>
+                                            <button class="button-primary">Button element</button>
+                                        </li>
+                                        <li>
+                                            <a class="button button-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="seven columns" roll="definition">
+                            <pre><code>
+&lt;ul class="<span class="u-color-success">button-dropdown</span>"&gt;
+    &lt;li&gt;
+        &lt;button class="<span class="u-color-success">dropdown-arrow</span>"&gt;Button element&lt;/button&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="navbars" class="row" role="region">
+                    <h3>Navbars</h3>
+                    <h4>Standard navbar</h4>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Navbar</a></li>
+                            <li><a href="#">Номе</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li class="u-pull-right"><a href="#">About</a></li>
+                        </ul>
+                    </nav>
+                    <h4>Primary navbar</h4>
+                    <nav class="nav-primary">
+                        <ul>
+                            <li class="primary"><a href="#">Primary navbar</a></li>
+                            <li><a href="#"><i class="material-icons">&#xE88A;</i> Номе</a></li>
+                            <li class="nav-dropdown">
+                                <a href="#">Features</a>
+                                <ul>
+                                    <li><a href="#"><i class="material-icons">&#xE400;</i> First feature</a></li>
+                                    <li><a href="#"><i class="material-icons">&#xE401;</i> Second feature</a></li>
+                                </ul>
+                            </li>
+                            <li class="u-pull-right info"><a href="#"><i class="material-icons">&#xE88E;</i></a></li>
+                        </ul>
+                    </nav>
+                    <div class="row" roll="definition">
+                        <div class="twelve columns">
+                            <pre><code>
+&lt;!-- Standard navbar --&gt;
+&lt;nav&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Navbar&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Номе&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Features&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="u-pull-right"&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+                <hr>
+
+                <section id="forms" class="row" role="region">
+                    <h3>Forms</h3>
+                    <p>Forms are a huge pain, but hopefully these styles make it a bit easier. All inputs, select, and buttons are normalized for a common height cross-browser so inputs can be stacked or placed alongside each other.</p>
+                    <form>
+                        <div class="row">
+                            <div class="six columns">
+                                <label for="exampleEmailInput">Your email</label>
+                                <input class="u-full-width" placeholder="your@mailbox.com" id="exampleEmailInput" type="email">
+                            </div>
+                            <div class="six columns">
+                                <label for="exampleRecipientInput">Reason for contacting</label>
+                                <select class="u-full-width" id="exampleRecipientInput">
+                                    <option value="Option 1">Questions</option>
+                                    <option value="Option 2">Advices</option>
+                                    <option value="Option 3">Admiration</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="exampleMessage">Message</label>
+                        <textarea class="u-full-width" placeholder="Here type your text" id="exampleMessage"></textarea>
+                        <div class="row">
+                            <div class="six columns">
+                                <label>
+                                    <input type="checkbox">
+                                    <div class="checkbox"></div>
+                                    <span class="label-body">check a copy to yourself</span>
+                                </label>
+                            </div>
+                            <div class="six columns">
+                                <label>
+                                    <input type="radio" name="anyname" checked="checked">
+                                    <div class="radio"></div>
+                                    <span class="label-body">plant text</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="anyname">
+                                    <div class="radio"></div>
+                                    <span class="label-body">html body</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input class="button-primary" value="Submit" type="submit">
+                    </form>
+                    <div class="row" roll="definition">
+                        <div class="twelve columns">
+                            <pre><code>
+&lt;form&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="six columns"&gt;
+            &lt;label for="exampleEmailInput"&gt;Your email&lt;/label&gt;
+            &lt;input class="u-full-width" placeholder="your@mailbox.com" id="exampleEmailInput" type="email"&gt;
+        &lt;/div&gt;
+        &lt;div class="six columns"&gt;
+            &lt;label for="exampleRecipientInput"&gt;Reason for contacting&lt;/label&gt;
+            &lt;select class="u-full-width" id="exampleRecipientInput"&gt;
+                &lt;option value="Option 1"&gt;Questions&lt;/option&gt;
+                &lt;option value="Option 2"&gt;Advices&lt;/option&gt;
+                &lt;option value="Option 3"&gt;Admiration&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;label for="exampleMessage"&gt;Message&lt;/label&gt;
+    &lt;textarea class="u-full-width" placeholder="Here type your text" id="exampleMessage"&gt;&lt;/textarea&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="six columns"&gt;
+            &lt;label&gt;
+                &lt;input type="checkbox"&gt;
+                &lt;div class="checkbox"&gt;&lt;/div&gt;
+                &lt;span class="label-body"&gt;check a copy to yourself&lt;/span&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="six columns"&gt;
+            &lt;label&gt;
+                &lt;input type="radio" name="anyname" checked="checked"&gt;
+                &lt;div class="radio"&gt;&lt;/div&gt;
+                &lt;span class="label-body"&gt;plant text&lt;/span&gt;
+            &lt;/label&gt;
+            &lt;label&gt;
+                &lt;input type="radio" name="anyname"&gt;
+                &lt;div class="radio"&gt;&lt;/div&gt;
+                &lt;span class="label-body"&gt;html body&lt;/span&gt;
+            &lt;/label&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input class="button-primary" value="Submit" type="submit"&gt;
+&lt;/form&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="groups" class="row" role="region">
+                    <h3>Groups</h3>
+                    <p>Groups combining input element with icon, standard, primary color & color icon buttons.</p>
+                    <div class="row">
+                        <div class="six columns">
+                            <h4>Form group</h4>
+                            <!-- Form group -->
+                            <form>
+                                <ul class="group">
+                                    <label>Form group label</label>
+                                    <li>
+                                        <input placeholder="Placeholder..." type="text">
+                                    </li>
+                                    <li>
+                                        <input class="button-primary" value="Submit" type="submit">
+                                    </li>
+                                </ul>
+                            </form>
+                            <h4>Button group</h4>
+                            <!-- Button group -->
+                            <ul class="group">
+                                <li>
+                                    <ul class="button-dropdown">
+                                        <li>
+                                            <a class="button dropdown-arrow" href="#">Anchor button</a>
+                                            <ul>
+                                                <li>
+                                                    <button>Button element</button>
+                                                </li>
+                                                <li>
+                                                    <button>Button element</button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button>Button element</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="six columns">
+                            <pre><code>
+&lt;!-- Form group --&gt;
+&lt;form&gt;
+    &lt;ul class="group"&gt;
+        &lt;label&gt;Form group label&lt;/label&gt;
+        &lt;li&gt;&lt;input placeholder="Placeholder..." type="text"&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;input class="button-primary" value="Submit" type="submit"&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/form&gt;
+
+&lt;!-- Button group --&gt;
+&lt;ul class="group"&gt;
+    &lt;li&gt;
+        &lt;ul class="button-dropdown"&gt;
+            &lt;li&gt;
+                &lt;a class="button dropdown-arrow" href="#"&gt;Anchor button&lt;/a&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="disabling" class="row" role="region">
+                    <h3>Disabling elements</h3>
+                    <div class="row">
+                        <div class="six columns">
+                            <h4>Disabled anchor buttons</h4>
+                            <!-- Disabled anchor buttons - To create the disabled style for anchor buttons add class "disabled". For non-clickabled "a" tag delete "href" attribute. -->
+                            <a class="button disabled">Anchor button</a>
+                            <br><br>
+                            <h4>Disabled buttons & inputs</h4>
+                            <!-- Buttons & inputs disabled elements - Adding attribute "disabled" into tags "button" and "input" will mark this elements as disabled. -->
+                            <button class="icons" disabled><i class="material-icons">&#xE854;</i></button>
+                            <input class="button-primary" value="submit input" type="submit" disabled>
+                            <br><br>
+                            <h4>Disabled dropdown buttons</h4>
+                            <!-- Disabled dropdown buttons - Set disabled the first level button to disable dropdown button.-->
+                            <ul class="button-dropdown">
+                                <li>
+                                    <button class="dropdown-arrow" disabled>Button element</button>
+                                    <ul>
+                                        <li>
+                                            <button>Button element</button>
+                                        </li>
+                                        <li>
+                                            <a class="button icons-success" href="#"><i class="material-icons">&#xE877;</i>Anchor button</a>
+                                        </li>
+                                        <li>
+                                            <button class="button-primary">Button element</button>
+                                        </li>
+                                        <li>
+                                            <a class="button button-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="six columns">
+                            <pre><code>
+&lt;!-- Disabled anchor buttons --&gt;
+&lt;a class="button <span class="u-color-success">disabled</span>"&gt;Anchor button&lt;/a&gt;
+
+&lt;!-- Buttons & inputs disabled elements --&gt;
+&lt;button <span class="u-color-success">disabled</span>&gt;Button element&lt;/button&gt;
+&lt;input value="submit input" type="submit" <span class="u-color-success">disabled</span>&gt;
+
+
+&lt;!-- Disabled dropdown buttons --&gt;
+&lt;ul class="button-dropdown"&gt;
+    &lt;li&gt;
+        &lt;button class="dropdown-arrow" <span class="u-color-success">disabled</span>&gt;Button element&lt;/button&gt;
+        &lt;ul&gt;
+            &lt;li&gt;...&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="five columns">
+                            <h4>Disabled forms</h4>
+                            <!--  Disable form elements - Adding attribute "disabled" into tag "input" will mark form as disabled. -->
+                            <form>
+                                <input class="u-full-width" placeholder="placeholder" type="text" disabled>
+                                <select class="u-full-width" disabled>
+                                    <option value="Option 1">Option 1</option>
+                                    <option value="Option 2">Option 2</option>
+                                </select>
+                                <textarea class="u-full-width" placeholder="placeholder" disabled></textarea>
+                                <label>
+                                    <input type="checkbox" disabled>
+                                    <div class="checkbox"></div>
+                                    <span class="label-body">check a copy to yourself</span>
+                                </label>
+                                <br>
+                                <label>
+                                    <input type="radio" checked="checked" disabled>
+                                    <div class="radio"></div>
+                                    <span class="label-body">plant text</span>
+                                </label>
+                                <label>
+                                    <input type="radio" disabled>
+                                    <div class="radio"></div>
+                                    <span class="label-body">html body</span>
+                                </label>
+                            </form>
+                        </div>
+                        <div class="seven columns">
+                            <pre><code>
+&lt;!-- Any types input --&gt;
+&lt;input type="text" <span class="u-color-success">disabled</span>&gt;
+
+&lt;!-- Select --&gt;
+&lt;select <span class="u-color-success">disabled</span>&gt;
+    &lt;option&gt;...&lt;/option&gt;
+&lt;/select&gt;
+
+&lt;!-- Textarea --&gt;
+&lt;textarea <span class="u-color-success">disabled</span>&gt;&lt;/textarea&gt;
+
+&lt;!-- Checkbox --&gt;
+&lt;label&gt;
+    &lt;input type="checkbox" <span class="u-color-success">disabled</span>&gt;
+    &lt;div class="checkbox"&gt;&lt;/div&gt;
+    &lt;span class="label-body"&gt;...&lt;/span&gt;
+&lt;/label&gt;
+
+&lt;!-- Radio buttons --&gt;
+&lt;label&gt;
+    &lt;input type="radio" checked="checked" <span class="u-color-success">disabled</span>&gt;
+    &lt;div class="radio"&gt;&lt;/div&gt;
+    &lt;span class="label-body"&gt;checked&lt;/span&gt;
+&lt;/label&gt;
+&lt;label&gt;
+    &lt;input type="radio" <span class="u-color-success">disabled</span>&gt;
+    &lt;div class="radio"&gt;&lt;/div&gt;
+    &lt;span class="label-body"&gt;unchecked&lt;/span&gt;
+&lt;/label&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+                <hr>
+                
+                <section id="lists" class="row" role="region">
+                    <h3>Lists</h3>
+                    <div class="row">
+                        <div class="six columns">
+                            <ul>
+                                <li>Unordered lists have basic styles</li>
+                                <li>
+                                    They use the circle list style
+                                    <ul>
+                                        <li>Nested lists styled to feel right</li>
+                                        <li>Can nest either type of list into the other</li>
+                                    </ul>
+                                </li>
+                                <li>Just more list items mama san</li>
+                            </ul>
+                            <pre role="definition"><code>
+&lt;!-- Basic list --&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;
+        Item 2
+        &lt;ul&gt;
+            &lt;li&gt;Item 2.1&lt;/li&gt;
+            &lt;li&gt;Item 2.2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+                            </code></pre>
+                        </div>
+                        <div class="six columns">
+                            <ol>
+                                <li>Ordered lists also have basic styles</li>
+                                <li>
+                                    They use the decimal list style
+                                    <ul>
+                                        <li>Ordered and unordered can be nested</li>
+                                        <li>Can nest either type of list into the other</li>
+                                    </ul>
+                                </li>
+                                <li>Last list item just for the fun</li>
+                            </ol>
+                            <pre role="definition"><code>
+&lt;!-- Ordered list --&gt;
+&lt;ol&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;
+        Item 2
+        &lt;ul&gt;
+            &lt;li&gt;Item 2.1&lt;/li&gt;
+            &lt;li&gt;Item 2.2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+                <hr>
+
+                <section id="cards" class="row" role="region">
+                    <h3>Cards</h3>
+                    <div class="row">
+                        <div class="six columns">
+                            <h4>Standard cards</h4>
+                            <div class="card">
+                                <img class="u-full-width" src="img/rally-038.jpg">
+                                <div class="block">
+                                    <span class="h h3">Rally 038</span><!-- In html code use heading <hX>Card title</hX> -->
+                                    <p>The car's 1,759.3 cc four-cylinder engine combined supercharging and turbocharging to reduce turbo lag at low engine speeds. The car produced a maximum output of 480 horsepower (350 kW).</p>
+                                </div>
+                                <div class="block u-align-right">
+                                    <a class="button icons" href="https://en.wikipedia.org/wiki/Lancia_Delta_S4"><i class="material-icons">&#xE157;</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="six columns">
+                            <h4>Primary color cards</h4>
+                            <p>To create primary color cards use the utility classes - "u-".</p>
+                                <div class="card u-border-off u-background-success">
+                                    <div class="block">
+                                        <span class="h h3">Success card title</span><!-- In html code use heading <hX>Success card title</hX> -->
+                                        <p>Asperiores, enim, odio, accusantium, quam sapiente velit placeat porro hic nostrum temporibus saepe repellendus cupiditate illum modi nam consequuntur quos rem eaque magni eveniet eum officiis necessitatibus eligendi ex nobis.</p>
+                                    </div>
+                                    <div class="block u-align-right">
+                                        <a href="#">Link ...</a>
+                                    </div>
+                                </div>
+                                <div class="card u-border-off u-background-warning">
+                                    <div class="block">
+                                        <span class="h h3">Warning card title</span><!-- In html code use heading <hX>Warning card title</hX> -->
+                                        <p>Quo, culpa debitis molestiae nihil minima quos beatae atque officia. Sunt doloremque debitis quaerat explicabo accusamus amet dolorem officiis sed sequi maxime. Accusantium hic!</p>
+                                    </div>
+                                    <div class="block u-align-right">
+                                        <a href="#">Link ...</a> 
+                                    </div>
+                                </div>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <pre role="definition"><code>
+&lt;!-- Standard card --&gt;
+&lt;div class="card"&gt;
+    &lt;img class="u-full-width" src="image16x9.jpg"&gt;
+    &lt;div class="block"&gt;
+        &lt;h3&gt;Card title&lt;/h3&gt;
+        &lt;p&gt;The main text area of the card&lt;/p&gt;
+        &lt;button class="button"&gt;Button element&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
+                            <h4>Array cards</h4>
+                            <p>038 give possibility to very simple construct responsive array cards. Sample available on <a href="examples.html#cards"  target="_self" title="Example" role="link">example page</a>.</p>
+                        </div>
+                        <div class="six columns">
+                            <pre role="definition"><code>
+&lt;!-- Array cards --&gt;
+&lt;div class="cards"&gt;
+    &lt;div class="card"&gt;...&lt;/div&gt;
+    ...
+    &lt;div class="card"&gt;...&lt;/div&gt;
+&lt;/div&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                
+                <hr>
+
+                <section id="tables" class="row" role="region">
+                    <h3>Tables</h3>
+                    <div class="row">
+                        <table class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Sex</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Spock</td>
+                                    <td>40</td>
+                                    <td>Male</td>
+                                    <td>Vulcan</td>
+                                </tr>
+                                <tr>
+                                    <td>James Tiberius Kirk</td>
+                                    <td>38</td>
+                                    <td>Male</td>
+                                    <td>USS Enterprise NCC-1701</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <pre role="definition"><code>
+&lt;table class="u-full-width"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;Sex&lt;/th&gt;
+            &lt;th&gt;Location&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Spock&lt;/td&gt;
+            &lt;td&gt;40&lt;/td&gt;
+            &lt;td&gt;Male&lt;/td&gt;
+            &lt;td&gt;Vulcan&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;James Tiberius Kirk&lt;/td&gt;
+            &lt;td&gt;38&lt;/td&gt;
+            &lt;td&gt;Male&lt;/td&gt;
+            &lt;td&gt;USS Enterprise NCC-1701&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+                
+                <section id="utilities" class="row" role="region">
+                    <h3>Utilities</h3>
+                    <div class="row">
+                        <div class="eight offset-by-two columns">
+                            <table class="u-full-width">
+                                <tr>
+                                    <td class="u-align-right">.u-global-radius</td>
+                                    <td valign="top">Set jnt radius</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-align-right">.u-border-off</td>
+                                    <td valign="top">Destroy border style</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-align-right">
+                                    .u-full-width
+                                    <br>
+                                    .u-max-full-width
+                                    </td>
+                                    <td valign="top">Expand or sets max full width for element</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-align-right">
+                                        .u-pull-right
+                                        <br>
+                                        .u-pull-left
+                                    </td>
+                                    <td valign="top">Align to right or left any element</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-align-right">
+                                        .u-align-left
+                                        <br>
+                                        .u-align-center
+                                        <br>
+                                        .u-align-right
+                                    </td>
+                                    <td valign="top">Align content in parent block</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-align-right">
+                                        .u-color-primary
+                                        <br>
+                                        .u-color-success
+                                        <br>
+                                        .u-color-info   
+                                        <br>
+                                        .u-color-warning
+                                        <br>
+                                        .u-color-danger 
+                                    </td>
+                                    <td valign="top">Set primary text colors</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-align-right">
+                                        .u-background-primary
+                                        <br>
+                                        .u-background-success
+                                        <br>
+                                        .u-background-info
+                                        <br>
+                                        .u-background-warning
+                                        <br>
+                                        .u-background-danger
+                                    </td>
+                                    <td valign="top">Set primary background colors</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer role="contentinfo">
+            <div class="container u-align-right">
+                <div class="row">
+                    <p>
+                        <b>038</b> by <a href="https://www.linkedin.com/in/selimov" target="_blank">Arthur A. Selimov</a> / <a href="http://mobitoon.ru" target="_blank">MOBITOON</a> &copy;2016
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $( function(){
+                var outerHeight,
+                    scrollTop,
+                    elementTop,
+                    element;
+                
+                $( 'a[href*="#"]' ).click( function(){
+                    outerHeight = $( document ).outerHeight( true );
+                    element = $( this ).attr( 'href' );
+                    element = element.substring( element.indexOf( '#' ) );
+                    scrollTop = $( document ).scrollTop();
+                    elementTop = $( element ).offset().top;
+                    $( 'html' ).animate( { scrollTop: elementTop }, Math.abs( 1000 * ( ( elementTop - scrollTop ) * 100 / outerHeight ) / 100 ) );
+                    return false;
+                });
+            });
+        </script-->
+    </body>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40988089 = new Ya.Metrika({ id:40988089, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40988089" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</html>

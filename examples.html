@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>038 - examples</title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="038 the modern, simple and responsive CSS pattern">
+        <meta name="keywords" content="html, html5, css, css3, grid, typography, buttons, navbars, forms, front-end, frameworks, lists, cards, tables, utilities">
+        <meta name="author" content="Arthur A. Selimov">
+        
+        <meta property="og:locale"              content="en-EN">
+        <meta property="og:type"                content="website">
+        <meta property="og:site_name"           content="MOBITOON">
+        <meta property="og:url"                 content="http://038.mobitoon.ru/examples.html">
+        <meta property="og:title"               content="038 - examples">
+        <meta property="og:description"         content="038 the modern, simple and responsive CSS pattern">
+        <meta property="og:image"               content="http://038.mobitoon.ru/img/share-logo.png">
+        
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/038.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Adds HTML5 element support for earlier versions of IE -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body id="home">
+        <header class="u-stick-top">
+            <nav role="navigation">
+                <div class="container">
+                    <a class="logo" href="index.html#home" target="_self" title="038 logo" role="banner">
+                        <img src="img/logo.svg" alt="Logo" title="038 logo">
+                    </a>
+                    <ul>
+                        <li class="nav-dropdown">
+                            <a title="Content">Content</a>
+                            <ul>
+                                <li><a href="index.html#grid"       target="_self" title="Grid" role="link">Grid</a></li>
+                                <li><a href="index.html#typography" target="_self" title="Typography" role="link">Typography</a></li>
+                                <li><a href="index.html#buttons"    target="_self" title="Buttons" role="link">Buttons</a></li>
+                                <li><a href="index.html#navbars"    target="_self" title="Navbars" role="link">Navbars</a></li>
+                                <li><a href="index.html#forms"      target="_self" title="Forms" role="link">Forms</a></li>
+                                <li><a href="index.html#groups"     target="_self" title="Groups" role="link">Groups</a></li>
+                                <li><a href="index.html#disabling"  target="_self" title="Disabling" role="link">Disabling</a></li>
+                                <li><a href="index.html#lists"      target="_self" title="Lists" role="link">Lists</a></li>
+                                <li><a href="index.html#cards"      target="_self" title="Cards" role="link">Cards</a></li>
+                                <li><a href="index.html#tables"     target="_self" title="Tables" role="link">Tables</a></li>
+                                <li><a href="index.html#utilities"  target="_self" title="Utilities" role="link">Utilities</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="examples.html" target="_self" title="Examples" role="link">Examples</a></li>
+                        <li class="u-pull-right"><a href="http://www.mobitoon.ru" target="_self" title="About" role="link">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main role="main">
+            <article class="container" role="article">
+                <header class="row u-align-center">
+                    <h1>038</h1>
+                    <p>The examples</p>
+                </header>
+
+                <hr>
+
+                <section role="region">
+                    <div class="row">
+                        <h2>Left side menu</h2>
+                        <p>This is classic web-page template. To select the active menu item use the utility classes to set background color.</p>
+                    </div>
+                    <div class="row">
+                        <div class="eight offset-by-two columns u-align-center">
+                            <img class="u-max-full-width" src="img/preview-example-left-side-menu-site.png" alt="Left side menu site example">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve">
+                            <pre><code>
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Left side menu&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/normalize.css"&gt;
+    &lt;link rel="stylesheet" href="css/038.css"&gt;
+&lt;/head&gt;
+    &lt;body&gt;
+        &lt;article class="container"&gt;
+            &lt;div class="row"&gt;
+                &lt;div class="three columns"&gt;
+                    &lt;img src="img/logo.svg"&gt;
+                    &lt;a class="button u-border-off u-full-width u-align-left" href="#"&gt;&lt;i class="material-icons"&gt;home&lt;/i&gt;Home&lt;/a&gt;
+                    &lt;hr&gt;
+                    &lt;form&gt;
+                        &lt;ul class="group"&gt;
+                            &lt;li&gt;&lt;input placeholder="Search..." type="search"&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;button class="icons" type="submit"&gt;&lt;i class="material-icons"&gt;search&lt;/i&gt;&lt;/button&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/form&gt;
+                    &lt;hr&gt;
+                    &lt;h6&gt;First menu title&lt;/h6&gt;
+                    &lt;a class="button u-border-off u-full-width u-align-left" href="#"&gt;First anchor&lt;/a&gt;
+                    &lt;a class="button u-border-off u-full-width u-align-left u-background-success" href="#"&gt;Second anchor&lt;/a&gt;
+                    &lt;a class="button u-border-off u-full-width u-align-left" href="#"&gt;Third anchor&lt;/a&gt;
+                    &lt;br&gt;&lt;br&gt;
+                    &lt;h6&gt;Second menu title&lt;/h6&gt;
+                    &lt;a class="button u-border-off u-full-width u-align-left" href="#"&gt;Fourth anchor&lt;/a&gt;
+                    &lt;a class="button u-border-off u-full-width u-align-left" href="#"&gt;Fifth anchor&lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="nine columns"&gt;
+                    &lt;h5&gt;First menu title&lt;/h5&gt;
+                    &lt;h6&gt;Second anchor&lt;/h6&gt;
+                    &lt;hr&gt;
+                    Second anchor's content place...
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/article&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <section role="region">
+                    <div class="row">
+                        <h2>Array cards</h2>
+                        <p>This example show how 038 provide perfectly simple construction for forming cards arrays for classic web & mobile site or application.</p>
+                    </div>
+                    <div class="row">
+                        <div class="eight offset-by-two columns u-align-center">
+                            <img class="u-max-full-width" src="img/preview-example-array-cards-site.png" alt="Left side menu site example">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve">
+                            <pre><code>
+&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Array cards&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/normalize.css"&gt;
+    &lt;link rel="stylesheet" href="css/038.css"&gt;
+&lt;/head&gt;
+    &lt;body&gt;
+        &lt;article class="container"&gt;
+            &lt;h1&gt;It's very simple!&lt;/h1&gt;
+            &lt;p&gt;Responsive array cards on cars example:&lt;/p&gt;
+            &lt;div class="cards"&gt;
+                &lt;div class="card"&gt;
+                    &lt;a href="img/pic.jpg"&gt;&lt;img class="u-full-width" src="img/prev.jpg"&gt;&lt;/a&gt;
+                    &lt;div class="block"&gt;
+                        &lt;h5&gt;Card #1&lt;/h5&gt;
+                        &lt;p&gt;The paragraph for the card #1.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="block u-align-right"&gt;
+                        &lt;a class="button icons" href="#"&gt;&lt;i class="material-icons"&gt;link&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="card"&gt;
+                    &lt;a href="img/pic.jpg"&gt;&lt;img class="u-full-width" src="img/prev.jpg"&gt;&lt;/a&gt;
+                    &lt;div class="block"&gt;
+                        &lt;h5&gt;Card #2&lt;/h5&gt;
+                        &lt;p&gt;The paragraph for this card #2.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="block u-align-right"&gt;
+                        &lt;a class="button icons" href="#"&gt;&lt;i class="material-icons"&gt;link&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="card"&gt;
+                    &lt;a href="img/pic.jpg"&gt;&lt;img class="u-full-width" src="img/prev.jpg"&gt;&lt;/a&gt;
+                    &lt;div class="block"&gt;
+                        &lt;h5&gt;Card #3&lt;/h5&gt;
+                        &lt;p&gt;The paragraph for the card #3.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="block u-align-right"&gt;
+                        &lt;a class="button icons" href="#"&gt;&lt;i class="material-icons"&gt;link&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="card"&gt;
+                    &lt;a href="img/pic.jpg"&gt;&lt;img class="u-full-width" src="img/prev.jpg"&gt;&lt;/a&gt;
+                    &lt;div class="block"&gt;
+                        &lt;h5&gt;Card #4&lt;/h5&gt;
+                        &lt;p&gt;The paragraph for this card #4.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="block u-align-right"&gt;
+                        &lt;a class="button icons" href="#"&gt;&lt;i class="material-icons"&gt;link&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="card"&gt;
+                    &lt;a href="img/pic.jpg"&gt;&lt;img class="u-full-width" src="img/prev.jpg"&gt;&lt;/a&gt;
+                    &lt;div class="block"&gt;
+                        &lt;h5&gt;Card #5&lt;/h5&gt;
+                        &lt;p&gt;The paragraph for the card #5.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="block u-align-right"&gt;
+                        &lt;a class="button icons" href="#"&gt;&lt;i class="material-icons"&gt;link&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class="card"&gt;
+                    &lt;a href="img/pic.jpg"&gt;&lt;img class="u-full-width" src="img/prev.jpg"&gt;&lt;/a&gt;
+                    &lt;div class="block"&gt;
+                        &lt;h5&gt;Card #6&lt;/h5&gt;
+                        &lt;p&gt;The paragraph for this card #6.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="block u-align-right"&gt;
+                        &lt;a class="button icons" href="#"&gt;&lt;i class="material-icons"&gt;link&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/article&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div class="container u-align-right">
+                <div class="row">
+                    <p>
+                        <b>038</b> by <a href="https://www.linkedin.com/in/selimov" target="_blank">Arthur A. Selimov</a> / <a href="http://mobitoon.ru" target="_blank">MOBITOON</a> &copy;2016
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40988089 = new Ya.Metrika({ id:40988089, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40988089" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</html>
