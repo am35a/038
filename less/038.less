@@ -1,5 +1,5 @@
 /*
-* 038 V1.0 based on Skeleton V2.0.4
+* 038 V1.1 based on Skeleton V2.0.4
 * 038 by Arthur Selimov / 2016
 * http://038.mobitoon.ru
 * Free to use under the MIT license.
@@ -52,7 +52,7 @@
 }
 
 /* For devices larger than 400px */
-@media (min-width: @bp-larger-than-mobile) {
+@media (min-width: @bp-mobile) {
     .container {
         width: @container-width-larger-than-mobile;
         padding: 0;
@@ -60,7 +60,7 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: @bp-larger-than-phablet) {
+@media (min-width: @bp-phablet) {
     .container {
         width: @container-width-larger-than-phablet;
     }
@@ -163,7 +163,7 @@ h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0;       }
 
 /* Larger than phablet */
-@media (min-width: @bp-larger-than-phablet) {
+@media (min-width: @bp-phablet) {
     h1 { font-size: 5.0rem; }
     h2 { font-size: 4.2rem; }
     h3 { font-size: 3.6rem; }
@@ -187,6 +187,9 @@ a {
     }
     &[href] {
         cursor: pointer;
+    }
+    > img {
+        display: block;
     }
 }
 
@@ -652,7 +655,7 @@ input {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
 }
 
 .checkbox {
@@ -818,7 +821,7 @@ pre > code {
 }
 
 /* For devices larger than 550px */
-@media (min-width: @bp-larger-than-phablet) {
+@media (min-width: @bp-phablet) {
     .cards > .card {
         margin-left: @column-margin;
         .grid-column-width(6);
@@ -829,7 +832,7 @@ pre > code {
 }
 
 /* For devices larger than 1000px */
-@media (min-width: @bp-larger-than-desktop) {
+@media (min-width: @bp-desktop) {
     .cards > .card {
         margin-left: @column-margin;
         .grid-column-width(4);
@@ -982,16 +985,40 @@ form {
     background-color: @danger-color!important;
     border-color: @danger-color;
 }
-
 [class*="u-background"]:not(.u-background-warning) {
     color: #fff;
+    a {
+        color: #fff;
+        &:hover {
+            color: darken(#fff, 5%);
+        }
+    }
 }
 
-[class*="u-background"]:not(.u-background-warning) a {
-    color: #fff;
-    &:hover {
-        color: darken(#fff, 5%);
-    }
+.u-hide { display: none; }
+.u-hide-lower {
+    /* Lower than mobile */
+    @media (max-width: @bp-mobile) { &-mobile { display: none; } }
+    /* Lower than phablet (also point when grid becomes active) */
+    @media (max-width: @bp-phablet) { &-phablet { display: none; } }
+    /* Lower than tablet */
+    @media (max-width: @bp-tablet) { &-tablet { display: none; } }
+    /* Lower than desktop */
+    @media (max-width: @bp-desktop) { &-desktop { display: none; } }
+    /* Lower than Desktop HD */
+    @media (max-width: @bp-desktophd) { &-desktophd { display: none; } }
+}
+.u-hide-larger {
+    /* Larger than mobile */
+    @media (min-width: @bp-mobile) { &-mobile { display: none; } }
+    /* Larger than phablet (also point when grid becomes active) */
+    @media (min-width: @bp-phablet) { &-phablet { display: none; } }
+    /* Larger than tablet */
+    @media (min-width: @bp-tablet) { &-tablet { display: none; } }
+    /* Larger than desktop */
+    @media (min-width: @bp-desktop) { &-desktop { display: none; } }
+    /* Larger than Desktop HD */
+    @media (min-width: @bp-desktophd) { &-desktophd { display: none; } }
 }
 
 /* Misc
@@ -1039,16 +1066,16 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: @bp-larger-than-mobile) {}
+@media (min-width: @bp-mobile) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: @bp-larger-than-phablet) {}
+@media (min-width: @bp-phablet) {}
 
 /* Larger than tablet */
-@media (min-width: @bp-larger-than-tablet) {}
+@media (min-width: @bp-tablet) {}
 
 /* Larger than desktop */
-@media (min-width: @bp-larger-than-desktop) {}
+@media (min-width: @bp-desktop) {}
 
 /* Larger than Desktop HD */
-@media (min-width: @bp-larger-than-desktophd) {}
+@media (min-width: @bp-desktophd) {}

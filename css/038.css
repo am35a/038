@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic';
 /*
-* 038 V1.0 based on Skeleton V2.0.4
+* 038 V1.1 based on Skeleton V2.0.4
 * 038 by Arthur Selimov / 2016
 * http://038.mobitoon.ru
 * Free to use under the MIT license.
@@ -30,7 +30,7 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5StnKWgpfO2iSkLzTz-AABg.ttf) format('truetype');
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v19/2fcrYFNaTjcS6g4U3t-Y5StnKWgpfO2iSkLzTz-AABg.ttf) format('truetype');
 }
 .material-icons {
   font-family: 'Material Icons';
@@ -322,6 +322,9 @@ a:hover {
 }
 a[href] {
   cursor: pointer;
+}
+a > img {
+  display: block;
 }
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1121,6 +1124,73 @@ form {
 }
 [class*="u-background"]:not(.u-background-warning) a:hover {
   color: #f2f2f2;
+}
+.u-hide {
+  display: none;
+}
+.u-hide-lower {
+  /* Lower than mobile */
+  /* Lower than phablet (also point when grid becomes active) */
+  /* Lower than tablet */
+  /* Lower than desktop */
+  /* Lower than Desktop HD */
+}
+@media (max-width: 400px) {
+  .u-hide-lower-mobile {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .u-hide-lower-phablet {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .u-hide-lower-tablet {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .u-hide-lower-desktop {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .u-hide-lower-desktophd {
+    display: none;
+  }
+}
+.u-hide-larger {
+  /* Larger than mobile */
+  /* Larger than phablet (also point when grid becomes active) */
+  /* Larger than tablet */
+  /* Larger than desktop */
+  /* Larger than Desktop HD */
+}
+@media (min-width: 400px) {
+  .u-hide-larger-mobile {
+    display: none;
+  }
+}
+@media (min-width: 550px) {
+  .u-hide-larger-phablet {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
+  .u-hide-larger-tablet {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .u-hide-larger-desktop {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .u-hide-larger-desktophd {
+    display: none;
+  }
 }
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
