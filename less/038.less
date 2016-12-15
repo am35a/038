@@ -1,5 +1,5 @@
 /*
-* 038 V1.1 based on Skeleton V2.0.4
+* 038 V1.2 based on Skeleton V2.0.4
 * 038 by Arthur Selimov / 2016
 * http://038.mobitoon.ru
 * Free to use under the MIT license.
@@ -134,6 +134,7 @@
 
 html {
     font-size: 62.5%;
+    background-color: @background-color;
 }
 
 body {
@@ -143,7 +144,6 @@ body {
     font-weight: 300;
     font-family: @font-family;
     color: @font-color;
-    background-color: @background-color;
 }
 
 /* Typography
@@ -318,6 +318,11 @@ button {
     &.icons-danger  > .material-icons { color: @danger-color; }
 }
 
+.button:hover:not(.disabled),
+button:hover:not(:disabled) {
+    &[class*=icons-] > .material-icons { color: white; }
+}
+
 /* Dropdown button */
 .button-dropdown {
     position: relative;
@@ -404,7 +409,7 @@ nav {
     border-bottom: 1px solid @dark-color;
     border-radius: 0;
     background-color: @border-color;
-    margin: 0 0 2.5rem 0;
+    //margin: 0 0 2.5rem 0;
 }
 
 .container nav {
@@ -516,7 +521,7 @@ header.u-stick-top {
     position: fixed;
     left: 50%;
     top: 0;
-    width: 100%;
+    width: 102%; /* +2% fix 1px empty edge on left */
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -642,8 +647,6 @@ input {
     }
 }
 
-
-
 .checkbox,
 .radio {
     position: absolute;
@@ -689,10 +692,12 @@ label > .label-body {
 ul.group {
     display: inline-table;
 }
+
 ul.group label {
     display: table-caption;
     white-space: nowrap;
 }
+
 ul.group > li {
     display: table-cell;
     list-style-type: none;
@@ -814,6 +819,9 @@ pre > code {
     background-color: @background-color;
     *:last-child {
         margin-bottom: 0;
+    }
+    img {
+        display: block;
     }
     .block {
         padding: 1.5rem;

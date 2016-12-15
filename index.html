@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>038 - responsive CSS pattern</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="038 the modern, simple and responsive CSS pattern">
         <meta name="keywords" content="html, html5, css, css3, grid, typography, buttons, navbars, forms, front-end, frameworks, lists, cards, tables, utilities">
@@ -31,12 +30,12 @@
         <header class="u-stick-top">
             <nav role="navigation">
                 <div class="container">
-                    <a class="logo" href="index.html#home" target="_self" title="038 logo" role="banner">
-                        <img src="img/logo.svg" alt="Logo" title="038 logo">
+                    <a class="logo" href="index.html#home" target="_self" title="038 home page" role="banner">
+                        <img src="img/logo.svg" alt="038">
                     </a>
                     <ul>
                         <li class="nav-dropdown">
-                            <a title="Content">Content</a>
+                            <a title="Content list">Content</a>
                             <ul>
                                 <li><a href="index.html#grid"       target="_self" title="Grid" role="link">Grid</a></li>
                                 <li><a href="index.html#typography" target="_self" title="Typography" role="link">Typography</a></li>
@@ -51,8 +50,8 @@
                                 <li><a href="index.html#utilities"  target="_self" title="Utilities" role="link">Utilities</a></li>
                             </ul>
                         </li>
-                        <li><a href="examples.html" target="_self" title="Examples" role="link">Examples</a></li>
-                        <li class="u-pull-right u-hide-lower-phablet"><a href="http://www.mobitoon.ru" target="_self" title="About" role="link">About</a></li>
+                        <li><a href="examples.html" target="_self" title="Examples page" role="link">Examples</a></li>
+                        <li class="u-pull-right u-hide-lower-phablet"><a href="http://www.mobitoon.ru" target="_self" title="About developers" role="link">About</a></li>
                     </ul>
                 </div>
             </nav>
@@ -61,7 +60,7 @@
             <article class="container" role="article">
                 <header class="row u-align-center">
                     <h1>038</h1>
-                    <p>The modern, simple & responsive<br>lightweight CSS pattern | Actually v1.1</p>
+                    <p>The modern, simple & responsive<br>lightweight CSS pattern | Actually v1.2</p>
                     <a class="button button-primary" href="http://ui.mobitoon.ru/038.zip" title="Download CSS pattern archive" role="button"><i class="material-icons">&#xE2C4;</i> download</a>
                 </header>
                 
@@ -72,7 +71,7 @@
                         <div class="block">
                             <h2 class="block">Rush with 038!</h2>
                             <p class="u-align-left">
-                                If <a href="http://getskeleton.com" target="_blank" alt="Skeleton">Skeleton</a> is quite the thing, but you are looking for something more... Get the <b>038</b>!
+                                If <a href="http://getskeleton.com" target="_blank" title="Skeleton" role="link">Skeleton</a> is quite the thing, but you are looking for something more... Get the <b>038</b>!
                             </p>
                             <p class="u-align-left">
                                 <b>038</b> is the CSS pattern based on Skeleton boilerplate syntax model. <b>038</b> have got no problems with grid offset, it helps with buttons group, navbars, icons, colors and so on without JS. And last but not least <b>038</b> still supports IE9.
@@ -81,7 +80,7 @@
                                 <pre><code class="u-align-left">
 //Just use these links to quick run 038:
 <span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/normalize.css"&gt;</span>
-<span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/1.1/038.min.css"&gt;</span>
+<span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/1.2/038.min.css"&gt;</span>
                                 </code></pre>
                             </p>
                         </div>
@@ -211,7 +210,7 @@
                         <div class="six columns">
                             <h4>Base type</h4>
                             <p>Type is all set with the <code>rems</code>, so font-sizes and spacial relationships can be responsively sized based on a single <code>&lt;html&gt;</code> font-size property. Out of the box, Skeleton never changes the <code>&lt;html&gt;</code> font-size, but it's there in case you need it for your project. All measurements are still base 10 though so, an <code>&lt;h1&gt;</code> with <code>5.0rem</code>font-size just means <code>50px</code>.</p>
-                            <p><strong>The typography base</strong> is <a href="https://fonts.google.com/specimen/Ubuntu">Ubuntu</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
+                            <p><strong>The typography base</strong> is <a href="https://fonts.google.com/specimen/Ubuntu" target="_blank" title="Ubuntu font information page" role="link">Ubuntu</a> served by Google, set at 15rem (15px) over a 1.6 line height (24px). Other type basics like <a href="#">anchors</a>, <strong>strong</strong>, <em>emphasis</em>, and <u>underline</u> are all obviously included.</p>
                             <pre roll="definition"><code>
 &lt;p&gt;
     The base type is 15px over 1.6 line height (24px)
@@ -304,8 +303,8 @@
                     </div>
                     <div class="row">
                         <div class="twelve columns">
-                            <h4>Icon, standard, primary color & color icon buttons</h4>
-                            <p>The iconography base is <a href="https://design.google.com/icons/">Material icons</a> served by Google. Use more at Google API to put it to a code.</p>
+                            <h4>Icon, standard, primary color and color icon buttons</h4>
+                            <p>The iconography base is <a href="https://material.io/icons/" target="_blank" title="Google material icons" role="link">Material icons</a> served by Google. Use more at Google API to put it to a code.</p>
                             <p class="u-color-warning">Only "a" and "button" tags supports icon button styles!</p>
                         </div>
                     </div>
@@ -315,17 +314,69 @@
                             <!-- Icons buttons -->
                             <button class="icons"><i class="material-icons">&#xE854;</i></button>
                             <a class="button icons" href="#"><i class="material-icons">&#xE928;</i></a>
-                            <br><br>
+                        </div>
+                        <div class="seven columns" roll="definition">
+                            <pre><code>
+&lt;!-- Icon buttons --&gt;
+&lt;button class="<span class="u-color-success">icons</span>"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;add_shopping_cart&lt;/i&gt;</span>&lt;/button&gt;
+&lt;a class="button <span class="u-color-success">icons</span>" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;remove_shopping_cart&lt;/i&gt;</span>&lt;/a&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="five columns">
                             <h5>Standard icon buttons</h5>
                             <!-- Standard icon buttons -->
                             <button><i class="material-icons">&#xE877;</i>Button element</button>
                             <a class="button" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
-                            <br><br>
+                        </div>
+                        <div class="seven columns" roll="definition">
+                            <pre><code>
+&lt;!-- Standard icon buttons --&gt;
+&lt;button&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
+&lt;a class="button" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="twelve columns">
                             <h5>Standard color icon buttons</h5>
                             <!-- Standard color icon buttons -->
-                            <button class="icons-success"><i class="material-icons">&#xE877;</i>Button element</button>
-                            <a class="button icons-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
-                            <br><br>
+                            <p>The classes ( .icons-<span class="u-color-primary">primary</span> / .icons-<span class="u-color-success">success</span> / .icons-<span class="u-color-info">info</span> / .icons-<span class="u-color-warning">warning</span> / .icons-<span class="u-color-danger">danger</span> ) set primary colors with hover effect for icon in button. </p>
+                            <div class="row">
+                                <div class="five columns">
+                                    <button class="icons-success"><i class="material-icons">&#xE877;</i>Button element</button>
+                                    <a class="button icons-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
+                                </div>
+                                <div class="seven columns" roll="definition">
+                                    <pre><code>
+&lt;!-- Standard color icon buttons with hover effect --&gt;
+&lt;button class="<span class="u-color-success">icons-success</span>"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
+&lt;a class="button <span class="u-color-success">icons-danger</span>" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                            <p>Use utility classes <a href="index.html#u-color" target="_self">u-color-</a> to set colors without hover effect.</p>
+                            <div class="row">
+                                <div class="five columns" roll="definition">
+                                    <button ><i class="material-icons u-color-success">&#xE877;</i>Button element</button>
+                                    <a class="button" href="#"><i class="material-icons u-color-danger">&#xE5CD;</i>Anchor button</a>
+                                </div>
+                                <div class="seven columns">
+                                    <pre><code>
+&lt;!-- Standard color icon buttons without hover effect --&gt;
+&lt;button &gt;<span class="u-color-success">&lt;i class="material-icons u-color-success"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
+&lt;a class="button" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons u-color-danger"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="five columns">
                             <h5>Primary icon buttons</h5>
                             <!-- Primary icon buttons -->
                             <button class="button-success"><i class="material-icons">&#xE877;</i>Button element</button>
@@ -333,18 +384,6 @@
                         </div>
                         <div class="seven columns" roll="definition">
                             <pre><code>
-&lt;!-- Standard icon buttons --&gt;
-&lt;button class="<span class="u-color-success">icons</span>"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;add_shopping_cart&lt;/i&gt;</span>&lt;/button&gt;
-&lt;a class="button <span class="u-color-success">icons</span>" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;remove_shopping_cart&lt;/i&gt;</span>&lt;/a&gt;
-
-&lt;!-- Standard icon buttons --&gt;
-&lt;button&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
-&lt;a class="button" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
-
-&lt;!-- Standard color icon buttons --&gt;
-&lt;button class="<span class="u-color-success">icons-success</span>"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
-&lt;a class="button <span class="u-color-success">icons-danger</span>" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
-
 &lt;!-- Primary icon buttons --&gt;
 &lt;button class="button-success"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
 &lt;a class="button button-danger" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
@@ -533,7 +572,7 @@
 
                 <section id="groups" class="row" role="region">
                     <h3>Groups</h3>
-                    <p>Groups combining input element with icon, standard, primary color & color icon buttons.</p>
+                    <p>Groups combining input element with icon, standard, primary color and color icon buttons.</p>
                     <div class="row">
                         <div class="six columns">
                             <h4>Form group</h4>
@@ -612,8 +651,8 @@
                             <!-- Disabled anchor buttons - To create the disabled style for anchor buttons add class "disabled". For non-clickabled "a" tag delete "href" attribute. -->
                             <a class="button disabled">Anchor button</a>
                             <br><br>
-                            <h4>Disabled buttons & inputs</h4>
-                            <!-- Buttons & inputs disabled elements - Adding attribute "disabled" into tags "button" and "input" will mark this elements as disabled. -->
+                            <h4>Disabled buttons and inputs</h4>
+                            <!-- Buttons and inputs disabled elements - Adding attribute "disabled" into tags "button" and "input" will mark this elements as disabled. -->
                             <button class="icons" disabled><i class="material-icons">&#xE854;</i></button>
                             <input class="button-primary" value="submit input" type="submit" disabled>
                             <br><br>
@@ -644,7 +683,7 @@
 &lt;!-- Disabled anchor buttons --&gt;
 &lt;a class="button <span class="u-color-success">disabled</span>"&gt;Anchor button&lt;/a&gt;
 
-&lt;!-- Buttons & inputs disabled elements --&gt;
+&lt;!-- Buttons and inputs disabled elements --&gt;
 &lt;button <span class="u-color-success">disabled</span>&gt;Button element&lt;/button&gt;
 &lt;input value="submit input" type="submit" <span class="u-color-success">disabled</span>&gt;
 
@@ -809,7 +848,7 @@
                         </div>
                         <div class="six columns">
                             <h4>Primary color cards</h4>
-                            <p>To create primary color cards use the utility classes - "u-".</p>
+                            <p>To create primary color cards use a background utility classes.</p>
                                 <div class="card u-border-off u-background-success">
                                     <div class="block">
                                         <span class="h h3">Success card title</span><!-- In html code use heading <hX>Success card title</hX> -->
@@ -871,24 +910,24 @@
                         <table class="u-full-width">
                             <thead>
                                 <tr>
+                                    <th>Place</th>
                                     <th>Name</th>
-                                    <th>Age</th>
-                                    <th>Sex</th>
                                     <th>Location</th>
+                                    <th>Time</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Spock</td>
-                                    <td>40</td>
-                                    <td>Male</td>
-                                    <td>Vulcan</td>
+                                    <td>#1</td>
+                                    <td>Toivonen / Cresto</td>
+                                    <td>54ème Rallye Automobile de Monte-Carlo</td>
+                                    <td>10:11:24</td>
                                 </tr>
                                 <tr>
-                                    <td>James Tiberius Kirk</td>
-                                    <td>38</td>
-                                    <td>Male</td>
-                                    <td>USS Enterprise NCC-1701</td>
+                                    <td>#2</td>
+                                    <td>Alén / Kivimäki</td>
+                                    <td>36th International Swedish Rally</td>
+                                    <td>5:11:13</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -897,28 +936,28 @@
                         <div class="twelve columns">
                             <pre role="definition"><code>
 &lt;table class="u-full-width"&gt;
-    &lt;thead&gt;
-        &lt;tr&gt;
-            &lt;th&gt;Name&lt;/th&gt;
-            &lt;th&gt;Age&lt;/th&gt;
-            &lt;th&gt;Sex&lt;/th&gt;
-            &lt;th&gt;Location&lt;/th&gt;
-        &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-        &lt;tr&gt;
-            &lt;td&gt;Spock&lt;/td&gt;
-            &lt;td&gt;40&lt;/td&gt;
-            &lt;td&gt;Male&lt;/td&gt;
-            &lt;td&gt;Vulcan&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-            &lt;td&gt;James Tiberius Kirk&lt;/td&gt;
-            &lt;td&gt;38&lt;/td&gt;
-            &lt;td&gt;Male&lt;/td&gt;
-            &lt;td&gt;USS Enterprise NCC-1701&lt;/td&gt;
-        &lt;/tr&gt;
-    &lt;/tbody&gt;
+    &lt;thead>
+        &lt;tr>
+            &lt;th>Place&lt;/th>
+            &lt;th>Name&lt;/th>
+            &lt;th>Location&lt;/th>
+            &lt;th>Time&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>
+        &lt;tr>
+            &lt;td>#1&lt;/td>
+            &lt;td>Toivonen / Cresto&lt;/td>
+            &lt;td>54ème Rallye Automobile de Monte-Carlo&lt;/td>
+            &lt;td>10:11:24&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;td>#2&lt;/td>
+            &lt;td>Alén / Kivimäki&lt;/td>
+            &lt;td>36th International Swedish Rally&lt;/td>
+            &lt;td>5:11:13&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
 &lt;/table&gt;
                             </code></pre>
                         </div>
@@ -932,6 +971,10 @@
                     <div class="row">
                         <div class="eight offset-by-two columns">
                             <table class="u-full-width">
+                                <tr>
+                                    <td class="u-align-right">.u-stick-top</td>
+                                    <td valign="top">Fixed header to top of web page</td>
+                                </tr>
                                 <tr>
                                     <td class="u-align-right">.u-global-radius</td>
                                     <td valign="top">Set jnt radius</td>
@@ -967,7 +1010,7 @@
                                     <td valign="top">Align content in parent block</td>
                                 </tr>
                                 <tr>
-                                    <td class="u-align-right">
+                                    <td id="u-color" class="u-align-right">
                                         .u-color-primary
                                         <br>
                                         .u-color-success
@@ -1038,30 +1081,34 @@
             <div class="container">
                 <div class="row">
                     <div class="one-third column">
-                        <a class="u-global-radius u-background-info u-pull-left u-hide-lower-phablet" href="https://github.com/am35a/038" target="_blank" title="038 on GitHub" role="banner"><img src="img/github_logo.png" height="24" title="GitHub logo" alt="GitHub"></a>
+                        <a class="u-global-radius u-background-info u-pull-left u-hide-lower-phablet" href="https://github.com/am35a/038" target="_blank" title="038 on GitHub" role="banner"><img src="img/github_logo.png" height="24" alt="GitHub"></a>
                     </div>
                     <div class="two-thirds column u-align-right">
-                        <b>038</b> by <a href="https://www.linkedin.com/in/selimov" target="_blank">Arthur A. Selimov</a> / <a href="http://mobitoon.ru" target="_blank">MOBITOON</a> &copy;2016
+                        <b>038</b> by <a href="https://www.linkedin.com/in/selimov/" target="_blank" title="LinkedIn profile" role="link">Arthur A. Selimov</a> / <a href="http://mobitoon.ru" target="_blank" title="Laboratory of innovative solutions" role="link">MOBITOON</a> &copy;2016
                     </div>
                 </div>
             </div>
         </footer>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            $( function(){
-                var outerHeight, scrollTop, elementTop, href, element;
-                $( 'a[href*="#"]' ).click( function( event ){
-                    event.preventDefault();
-                    outerHeight = $( document ).outerHeight( true );
-                    href = $( this ).attr( 'href' );
-                    element = href.substring( href.indexOf( '#' ) );                    
-                    scrollTop = $( document ).scrollTop();
-                    elementTop = $( element ).offset().top;
-                    $( 'body, html' ).animate( { scrollTop: elementTop }, Math.abs( 1500 * ( ( elementTop - scrollTop ) * 100 / outerHeight ) / 100 ) );
-                });
-            });
-        </script>
-        
     </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $( function(){
+            var outerHeight, scrollTop, elementTop, href, element;
+            $( 'a[href*="index.html#"]' ).click( function( event ){
+                event.preventDefault();
+                outerHeight = $( document ).outerHeight( true );
+                href = $( this ).attr( 'href' );
+                element = href.substring( href.indexOf( '#' ) );                    
+                scrollTop = $( document ).scrollTop();
+                elementTop = $( element ).offset().top;
+                $( 'body, html' ).animate( { 'scrollTop': elementTop - $( 'nav' ).height() }, Math.abs( 1500 * ( ( elementTop - scrollTop ) * 100 / outerHeight ) / 100 ) );
+            });
+            $('a[href="#"]').click( function( event ){
+                event.preventDefault();
+                $( document ).off( 'scroll' );
+                $( 'html, body' ).stop().animate( { 'scrollTop': $( this.hash ).offset().top }, function () { $( document ).on( 'scroll', onScroll ) } );
+            });
+        });
+    </script>
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40988089 = new Ya.Metrika({ id:40988089, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40988089" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </html>

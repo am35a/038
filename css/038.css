@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=cyrillic';
 /*
-* 038 V1.1 based on Skeleton V2.0.4
+* 038 V1.2 based on Skeleton V2.0.4
 * 038 by Arthur Selimov / 2016
 * http://038.mobitoon.ru
 * Free to use under the MIT license.
@@ -234,6 +234,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 html {
   font-size: 62.5%;
+  background-color: #252830;
 }
 body {
   position: relative;
@@ -243,7 +244,6 @@ body {
   font-weight: 300;
   font-family: 'Ubuntu', sans-serif;
   color: #cfd2da;
-  background-color: #252830;
 }
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -518,6 +518,10 @@ button.icons-warning > .material-icons {
 button.icons-danger > .material-icons {
   color: #e64759;
 }
+.button:hover:not(.disabled)[class*=icons-] > .material-icons,
+button:hover:not(:disabled)[class*=icons-] > .material-icons {
+  color: white;
+}
 /* Dropdown button */
 .button-dropdown {
   position: relative;
@@ -593,7 +597,6 @@ nav {
   border-bottom: 1px solid #1a1c22;
   border-radius: 0;
   background-color: #434857;
-  margin: 0 0 2.5rem 0;
 }
 .container nav {
   padding: 0 1.5rem;
@@ -694,7 +697,8 @@ header.u-stick-top {
   position: fixed;
   left: 50%;
   top: 0;
-  width: 100%;
+  width: 102%;
+  /* +2% fix 1px empty edge on left */
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -960,6 +964,9 @@ pre > code {
 }
 .card *:last-child {
   margin-bottom: 0;
+}
+.card img {
+  display: block;
 }
 .card .block {
   padding: 1.5rem;
