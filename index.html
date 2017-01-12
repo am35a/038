@@ -60,14 +60,14 @@
             <article class="container" role="article">
                 <header class="row u-align-center">
                     <h1>038</h1>
-                    <p>The modern, simple & responsive<br>lightweight CSS pattern | Actually v1.2</p>
+                    <p>The modern, simple & responsive<br>lightweight CSS pattern | Actually v1.3</p>
                     <a class="button button-primary" href="http://ui.mobitoon.ru/038.zip" title="Download CSS pattern archive" role="button"><i class="material-icons">&#xE2C4;</i> download</a>
                 </header>
                 
                 <hr>
 
                 <section class="row" role="note">
-                    <div class="card ten offset-by-one columns u-align-center u-background-info u-border-off">
+                    <div class="card ten offset-by-one columns u-align-center u-set-info u-border-off">
                         <div class="block">
                             <h2 class="block">Rush with 038!</h2>
                             <p class="u-align-left">
@@ -80,7 +80,7 @@
                                 <pre><code class="u-align-left">
 //Just use these links to quick run 038:
 <span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/normalize.css"&gt;</span>
-<span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/1.2/038.min.css"&gt;</span>
+<span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/1.3/038.min.css"&gt;</span>
                                 </code></pre>
                             </p>
                         </div>
@@ -358,7 +358,7 @@
                                     </code></pre>
                                 </div>
                             </div>
-                            <p>Use utility classes <a href="index.html#u-color" target="_self">u-color-</a> to set colors without hover effect.</p>
+                            <p>Use the <a href="index.html#u-color" target="_self">u-color-</a> utility classes to set colors without hover effect.</p>
                             <div class="row">
                                 <div class="five columns" roll="definition">
                                     <button ><i class="material-icons u-color-success">&#xE877;</i>Button element</button>
@@ -367,7 +367,7 @@
                                 <div class="seven columns">
                                     <pre><code>
 &lt;!-- Standard color icon buttons without hover effect --&gt;
-&lt;button &gt;<span class="u-color-success">&lt;i class="material-icons u-color-success"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
+&lt;button&gt;<span class="u-color-success">&lt;i class="material-icons u-color-success"&gt;done_all&lt;/i&gt;</span>Button element&lt;/button&gt;
 &lt;a class="button" href="#"&gt;<span class="u-color-success">&lt;i class="material-icons u-color-danger"&gt;close&lt;/i&gt;</span>Anchor button&lt;/a&gt;
                                     </code></pre>
                                 </div>
@@ -428,6 +428,136 @@
                             </code></pre>
                         </div>
                     </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h5>Check buttons</h5>
+                            <!-- Check buttons -->
+                            <div class="row">
+                                <div class="five columns">
+                                    <label class="check-button">
+                                        <input type="checkbox" checked>
+                                        <div class="button">
+                                            <i class="material-icons check">&#xE5CA;</i>
+                                            <i class="material-icons uncheck">&#xE14B;</i>
+                                            Check button
+                                        </div>
+                                    </label>
+                                    <br><br>
+                                    <p>Using an <a href="index.html#utilities" target="_self">utilities classes</a> formed any types of check button or group.</p>
+                                    <label class="check-button">
+                                        <input type="checkbox">
+                                        <div class="button button-success check"><i class="material-icons">&#xE5CA;</i>Check button</div>
+                                        <div class="button button-warning uncheck"><i class="material-icons">&#xE14B;</i>Check button</div>
+                                    </label>
+                                    <label class="check-button">
+                                        <input type="checkbox">
+                                        <div class="button button-primary icons">
+                                            <i class="material-icons check">&#xE898;</i>
+                                            <i class="material-icons uncheck">&#xE899;</i>
+                                        </div>
+                                    </label>
+                                    <ul class="group inline">
+                                        <li>
+                                            <label class="check-button">
+                                                <input type="checkbox">
+                                                <div class="button icons u-set-info">
+                                                    <i class="material-icons check">&#xE858;</i>
+                                                    <i class="material-icons uncheck">&#xE857;</i>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="check-button">
+                                                <input type="checkbox">
+                                                <div class="button icons u-set-info">
+                                                    <i class="material-icons check">&#xE8F4;</i>
+                                                    <i class="material-icons uncheck">&#xE8F5;</i>
+                                                </div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="check-button">
+                                                <input type="checkbox">
+                                                <div class="button icons u-set-info">
+                                                    <i class="material-icons check">&#xE0C8;</i>
+                                                    <i class="material-icons uncheck">&#xE0C7;</i>
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="seven columns" roll="definition">
+                                    <pre><code>
+&lt;label class="check-button">
+    &lt;input type="checkbox" checked&gt;
+    &lt;div class="button">
+        &lt;i class="material-icons check">check&lt;/i&gt;
+        &lt;i class="material-icons uncheck">block&lt;/i&gt;
+        Check button
+    &lt;/div&gt;
+&lt;/label&gt;
+                                    </code></pre>
+                                </div>
+                            </div>
+                        <div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="five columns">
+                            <h5>Radio buttons</h5>
+                            <!-- Radio buttons -->
+                            <label class="radio-button">
+                                <input type="radio" name="anyname2" checked="checked">
+                                <div class="button">
+                                    <i class="material-icons check">&#xE837;</i>
+                                    <i class="material-icons uncheck">&#xE836;</i>
+                                    Radio first
+                                </div>
+                            </label>
+                            <label class="radio-button">
+                                <input type="radio" name="anyname2">
+                                <div class="button">
+                                    <i class="material-icons check">&#xE837;</i>
+                                    <i class="material-icons uncheck">&#xE836;</i>
+                                    Radio second
+                                </div>
+                            </label>
+                            <br><br>
+                            <p>Dropdown element with radio buttons is alternative method of presentation of simple list radio buttons</p>
+                            <ul class="button-dropdown">
+                                <li>
+                                    <a class="button dropdown-arrow">Dropdown radio</a>
+                                    <ul>
+                                        <li>
+                                            <label class="radio-button">
+                                                <input type="radio" name="anyname3" checked="checked">
+                                                <div class="button u-align-left"><i class="material-icons check">&#xE837;</i><i class="material-icons uncheck">&#xE836;</i>Radio first</div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="radio-button">
+                                                <input type="radio" name="anyname3">
+                                                <div class="button u-align-left"><i class="material-icons check">&#xE837;</i><i class="material-icons uncheck">&#xE836;</i>Radio second</div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="seven columns" roll="definition">
+                            <pre><code>
+&lt;label class="radio-button"&gt;
+    &lt;input type="radio" name="anyname" checked="checked"&gt;
+    &lt;div class="button"&gt;
+        &lt;i class="material-icons check"&gt;radio_button_checked&lt;/i&gt;
+        &lt;i class="material-icons uncheck"&gt;radio_button_unchecked&lt;/i&gt;
+        Radio first
+    &lt;/div&gt;
+&lt;/label&gt;
+                            </code></pre>
+                        </div>
+                    </div>
                 </section>
 
                 <hr>
@@ -449,7 +579,7 @@
                             <li class="primary"><a href="#">Primary navbar</a></li>
                             <li><a href="#"><i class="material-icons">&#xE88A;</i> Номе</a></li>
                             <li class="nav-dropdown">
-                                <a href="#">Features</a>
+                                <a>Features</a>
                                 <ul>
                                     <li><a href="#"><i class="material-icons">&#xE400;</i> First feature</a></li>
                                     <li><a href="#"><i class="material-icons">&#xE401;</i> Second feature</a></li>
@@ -594,7 +724,7 @@
                                 <li>
                                     <ul class="button-dropdown">
                                         <li>
-                                            <a class="button dropdown-arrow" href="#">Anchor button</a>
+                                            <a class="button dropdown-arrow">Anchor button</a>
                                             <ul>
                                                 <li>
                                                     <button>Button element</button>
@@ -627,7 +757,7 @@
     &lt;li&gt;
         &lt;ul class="button-dropdown"&gt;
             &lt;li&gt;
-                &lt;a class="button dropdown-arrow" href="#"&gt;Anchor button&lt;/a&gt;
+                &lt;a class="button dropdown-arrow"&gt;Anchor button&lt;/a&gt;
                 &lt;ul&gt;
                     &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
                 &lt;/ul&gt;
@@ -849,7 +979,7 @@
                         <div class="six columns">
                             <h4>Primary color cards</h4>
                             <p>To create primary color cards use a background utility classes.</p>
-                                <div class="card u-border-off u-background-success">
+                                <div class="card u-border-off u-set-success">
                                     <div class="block">
                                         <span class="h h3">Success card title</span><!-- In html code use heading <hX>Success card title</hX> -->
                                         <p>Asperiores, enim, odio, accusantium, quam sapiente velit placeat porro hic nostrum temporibus saepe repellendus cupiditate illum modi nam consequuntur quos rem eaque magni eveniet eum officiis necessitatibus eligendi ex nobis.</p>
@@ -858,7 +988,7 @@
                                         <a href="#">Link ...</a>
                                     </div>
                                 </div>
-                                <div class="card u-border-off u-background-warning">
+                                <div class="card u-border-off u-set-warning">
                                     <div class="block">
                                         <span class="h h3">Warning card title</span><!-- In html code use heading <hX>Warning card title</hX> -->
                                         <p>Quo, culpa debitis molestiae nihil minima quos beatae atque officia. Sunt doloremque debitis quaerat explicabo accusamus amet dolorem officiis sed sequi maxime. Accusantium hic!</p>
@@ -981,13 +1111,17 @@
                                 </tr>
                                 <tr>
                                     <td class="u-align-right">.u-border-off</td>
-                                    <td valign="top">Destroy border style</td>
+                                    <td valign="top">Define border color as transparent</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-align-right">.u-background-off</td>
+                                    <td valign="top">Define background color as transparent</td>
                                 </tr>
                                 <tr>
                                     <td class="u-align-right">
-                                    .u-full-width
-                                    <br>
-                                    .u-max-full-width
+                                        .u-full-width
+                                        <br>
+                                        .u-max-full-width
                                     </td>
                                     <td valign="top">Expand or sets max full width for element</td>
                                 </tr>
@@ -1025,17 +1159,17 @@
                                 </tr>
                                 <tr>
                                     <td class="u-align-right">
-                                        .u-background-primary
+                                        .u-set-primary
                                         <br>
-                                        .u-background-success
+                                        .u-set-success
                                         <br>
-                                        .u-background-info
+                                        .u-set-info
                                         <br>
-                                        .u-background-warning
+                                        .u-set-warning
                                         <br>
-                                        .u-background-danger
+                                        .u-set-danger
                                     </td>
-                                    <td valign="top">Set primary background colors</td>
+                                    <td valign="top">Set primary colors for background, border and text</td>
                                 </tr>
                                 <tr>
                                     <td class="u-align-right">
@@ -1081,10 +1215,10 @@
             <div class="container">
                 <div class="row">
                     <div class="one-third column">
-                        <a class="u-global-radius u-background-info u-pull-left u-hide-lower-phablet" href="https://github.com/am35a/038" target="_blank" title="038 on GitHub" role="banner"><img src="img/github_logo.png" height="24" alt="GitHub"></a>
+                        <a class="u-global-radius u-set-info u-pull-left u-hide-lower-phablet" href="https://github.com/am35a/038" target="_blank" title="038 on GitHub" role="banner"><img src="img/github_logo.png" height="24" alt="GitHub"></a>
                     </div>
                     <div class="two-thirds column u-align-right">
-                        <b>038</b> by <a href="https://www.linkedin.com/in/selimov/" target="_blank" title="LinkedIn profile" role="link">Arthur A. Selimov</a> / <a href="http://mobitoon.ru" target="_blank" title="Laboratory of innovative solutions" role="link">MOBITOON</a> &copy;2016
+                        <b>038</b> by <a href="https://www.linkedin.com/in/selimov/" target="_blank" title="LinkedIn profile" role="link">Arthur A. Selimov</a> / <a href="http://mobitoon.ru" target="_blank" title="Laboratory of innovative solutions" role="link">MOBITOON</a> &copy;2017
                     </div>
                 </div>
             </div>
