@@ -60,8 +60,8 @@
             <article class="container" role="article">
                 <header class="row u-align-center">
                     <h1>038</h1>
-                    <p>The modern, simple & responsive<br>lightweight CSS pattern | Actually v1.3</p>
-                    <a class="button button-primary" href="http://ui.mobitoon.ru/038.zip" title="Download CSS pattern archive" role="button"><i class="material-icons">&#xE2C4;</i> download</a>
+                    <p>The modern, simple & responsive<br>lightweight CSS pattern | Actually v1.4</p>
+                    <a class="button button-primary" href="http://038.mobitoon.ru/038.zip" title="Download CSS pattern archive" role="button"><i class="material-icons">&#xE2C4;</i> download</a>
                 </header>
                 
                 <hr>
@@ -74,13 +74,15 @@
                                 If <a href="http://getskeleton.com" target="_blank" title="Skeleton" role="link">Skeleton</a> is quite the thing, but you are looking for something more... Get the <b>038</b>!
                             </p>
                             <p class="u-align-left">
-                                <b>038</b> is the CSS pattern based on Skeleton boilerplate syntax model. <b>038</b> have got no problems with grid offset, it helps with buttons group, navbars, icons, colors and so on without JS. And last but not least <b>038</b> still supports IE9.
+                                <b>038</b> is the CSS pattern based on Skeleton boilerplate syntax model. <b>038</b> have got no problems with grid offset, it helps with buttons group, navbars, icons, colors and so on without JavaScript. And last but not least <b>038</b> still supports IE9.
+                                <br>
+                                <b>038</b>  have best integration with touch slider such as Swiper, One Page Scroll, firstPage or other customizable plugins for desktop and mobile devices. You also use <b>038</b> for building amazing mobile apps on frameworks like Adobe PhoneGap.
                             </p>
                             <p class="u-align-left">
                                 <pre><code class="u-align-left">
 //Just use these links to quick run 038:
 <span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/normalize.css"&gt;</span>
-<span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/1.3/038.min.css"&gt;</span>
+<span class="u-color-success">&lt;link rel="stylesheet" href="http://038.mobitoon.ru/css/1.4/038.min.css"&gt;</span>
                                 </code></pre>
                             </p>
                         </div>
@@ -248,56 +250,55 @@
 
                 <section id="buttons" role="region">
                     <h3>Buttons</h3>
+                    <p>
+                        This visual model for "button" and "input" tags with type="button | reset | submit".
+                        <br>
+                        Using an <a href="index.html#utilities" target="_self">utilities classes</a> formed any types of check button or group.
+                    </p>
                     <div class="row">
                         <div class="twelve columns">
                             <h4>Standard buttons</h4>
                             <!-- Standard buttons -->
-                            <button>Button element</button>
+                            <button type="button">Button element</button>
                             <a class="button" href="#">Anchor button</a>
-                            <input value="submit input" type="submit">
-                            <input value="button input" type="button">
+                            <input value="Input button" type="button">
                         </div>
                     </div>
                     <div class="row">
                         <div class="twelve columns">
                             <h4>Primary buttons</h4>
                             <!-- Primary buttons -->
-                            <button class="button-primary">Button element</button>
+                            <button class="button-primary" type="button">Button element</button>
                             <a class="button button-primary" href="#">Anchor button</a>
-                            <input class="button-primary" value="submit input" type="submit">
-                            <input class="button-primary" value="button input" type="button">
+                            <input class="button-primary" value="Input button" type="button">
                         </div>
                     </div>
                     <div class="row">
                         <div class="twelve columns">
                             <h4>Primary color buttons</h4>
                             <!-- Primary color buttons -->
-                            <button class="button-success">Button element</button>
+                            <button class="button-success" type="button">Button element</button>
                             <a class="button button-info" href="#">Anchor button</a>
-                            <input class="button-warning" value="submit input" type="submit">
-                            <input class="button-danger" value="button input" type="button">
+                            <input class="button-warning" value="Input button" type="button">
                         </div>
                     </div>
                     <div class="row" roll="definition">
                         <div class="twelve columns">
                             <pre><code>
 &lt;!-- Standard buttons --&gt;
-&lt;button&gt;Button element&lt;/button&gt;
+&lt;button type="button"&gt;Button element&lt;/button&gt;
 &lt;a class="button" href="#"&gt;Anchor button&lt;/a&gt;
-&lt;input value="submit input" type="submit"&gt;
-&lt;input value="button input" type="button"&gt;
+&lt;input value="Input button" type="button"&gt;
 
 &lt;!-- Primary buttons --&gt;
-&lt;button class="button-primary"&gt;Button element&lt;/button&gt;
+&lt;button class="button-primary" type="button"&gt;Button element&lt;/button&gt;
 &lt;a class="button button-primary" href="#"&gt;Anchor button&lt;/a&gt;
-&lt;input class="button-primary" value="submit input" type="submit"&gt;
-&lt;input class="button-primary" value="button input" type="button"&gt;
+&lt;input class="button-primary" value="Input button" type="button"&gt;
 
 &lt;!-- Primary color buttons --&gt;
-&lt;button class="button-success"&gt;Button element&lt;/button&gt;
+&lt;button class="button-success" type="button"&gt;Button element&lt;/button&gt;
 &lt;a class="button button-info" href="#"&gt;Anchor button&lt;/a&gt;
-&lt;input class="button-warning" value="submit input" type="submit"&gt;
-&lt;input class="button-danger" value="button input" type="button"&gt;
+&lt;input class="button-danger" value="Input button" type="button"&gt;
                             </code></pre>
                         </div>
                     </div>
@@ -393,114 +394,91 @@
                     <br><br>
                     <div class="row">
                         <div class="five columns">
-                            <h5>Dropdown buttons</h5>
-                            <!-- Dropdown buttons -->
-                            <ul class="button-dropdown">
-                                <li>
-                                    <button class="dropdown-arrow">Button element</button>
-                                    <ul>
-                                        <li>
-                                            <button>Button element</button>
-                                        </li>
-                                        <li>
-                                            <a class="button icons-success" href="#"><i class="material-icons">&#xE877;</i>Anchor button</a>
-                                        </li>
-                                        <li>
-                                            <button class="button-primary">Button element</button>
-                                        </li>
-                                        <li>
-                                            <a class="button button-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <h5>Extra buttons</h5>
+                            <!-- Extra buttons -->
+                            <div class="extra-button">
+                                <div class="button arrow">Button element</div>
+                                <ul>
+                                    <li><button>Button element</button></li>
+                                    <li><a class="button" href="#">Anchor button</a></li>
+                                    <li><input value="Input button" type="button"></li>
+                                </ul>
+                            </div>
+                            <br><br>
+                            <ul>
+                                <label>Use the classes to align popup:</label>
+                                <li>"left-top", "left-bottom"</li>
+                                <li>"top-left", "top-right"</li>
+                                <li>"bottom-left", "bottom-right"</li>
+                                <li>"right-top", "right-bottom"</li>
+                            </p>
+                            <div class="extra-button bottom-left">
+                                <button class="arrow">Button element</button>
+                                <ul>
+                                    <li>
+                                        <button>Button element</button>
+                                    </li>
+                                    <li>
+                                        <a class="button icons-success" href="#"><i class="material-icons">&#xE877;</i>Anchor button</a>
+                                    </li>
+                                    <li>
+                                        <button class="button-primary">Button element</button>
+                                    </li>
+                                    <li>
+                                        <a class="button button-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="seven columns" roll="definition">
                             <pre><code>
-&lt;ul class="<span class="u-color-success">button-dropdown</span>"&gt;
-    &lt;li&gt;
-        &lt;button class="<span class="u-color-success">dropdown-arrow</span>"&gt;Button element&lt;/button&gt;
-        &lt;ul&gt;
-            &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
+&lt;!-- Extra button --&gt;
+&lt;div class="<span class="u-color-success">extra-button</span>"&gt;
+    &lt;div class="button <span class="u-color-success">arrow</span>"&gt;Button element&lt;/div&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="button" href="#"&gt;Anchor button&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;input value="Input button" type="button"&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- Extra button with align popup --&gt;
+&lt;div class="extra-button <span class="u-color-success">bottom-left</span>"&gt;
+    &lt;button class="arrow"&gt;Button element&lt;/button&gt;
+    &lt;ul&gt;
+        ...
+    &lt;/ul&gt;
+&lt;/div&gt;
                             </code></pre>
                         </div>
                     </div>
                     <br><br>
                     <div class="row">
-                        <div class="twelve columns">
+                        <div class="five columns">
                             <h5>Check buttons</h5>
                             <!-- Check buttons -->
-                            <div class="row">
-                                <div class="five columns">
-                                    <label class="check-button">
-                                        <input type="checkbox" checked>
-                                        <div class="button">
-                                            <i class="material-icons check">&#xE5CA;</i>
-                                            <i class="material-icons uncheck">&#xE14B;</i>
-                                            Check button
-                                        </div>
-                                    </label>
-                                    <br><br>
-                                    <p>Using an <a href="index.html#utilities" target="_self">utilities classes</a> formed any types of check button or group.</p>
-                                    <label class="check-button">
-                                        <input type="checkbox">
-                                        <div class="button button-success check"><i class="material-icons">&#xE5CA;</i>Check button</div>
-                                        <div class="button button-warning uncheck"><i class="material-icons">&#xE14B;</i>Check button</div>
-                                    </label>
-                                    <label class="check-button">
-                                        <input type="checkbox">
-                                        <div class="button button-primary icons">
-                                            <i class="material-icons check">&#xE898;</i>
-                                            <i class="material-icons uncheck">&#xE899;</i>
-                                        </div>
-                                    </label>
-                                    <ul class="group inline">
-                                        <li>
-                                            <label class="check-button">
-                                                <input type="checkbox">
-                                                <div class="button icons u-set-info">
-                                                    <i class="material-icons check">&#xE858;</i>
-                                                    <i class="material-icons uncheck">&#xE857;</i>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="check-button">
-                                                <input type="checkbox">
-                                                <div class="button icons u-set-info">
-                                                    <i class="material-icons check">&#xE8F4;</i>
-                                                    <i class="material-icons uncheck">&#xE8F5;</i>
-                                                </div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="check-button">
-                                                <input type="checkbox">
-                                                <div class="button icons u-set-info">
-                                                    <i class="material-icons check">&#xE0C8;</i>
-                                                    <i class="material-icons uncheck">&#xE0C7;</i>
-                                                </div>
-                                            </label>
-                                        </li>
-                                    </ul>
+                            <label class="check-button">
+                                <input type="checkbox" checked>
+                                <div class="button">
+                                    <i class="material-icons check">&#xE5CA;</i>
+                                    <i class="material-icons uncheck">&#xE14B;</i>
+                                    Check button
                                 </div>
-                                <div class="seven columns" roll="definition">
-                                    <pre><code>
-&lt;label class="check-button">
+                            </label>
+                        </div>
+                        <div class="seven columns" roll="definition">
+                            <pre><code>
+&lt;!-- Check button --&gt;
+&lt;label class="check-button"&gt;
     &lt;input type="checkbox" checked&gt;
-    &lt;div class="button">
+    &lt;div class="button"&gt;
         &lt;i class="material-icons check">check&lt;/i&gt;
         &lt;i class="material-icons uncheck">block&lt;/i&gt;
         Check button
     &lt;/div&gt;
 &lt;/label&gt;
-                                    </code></pre>
-                                </div>
-                            </div>
-                        <div>
+                            </code></pre>
+                        </div>
                     </div>
                     <br><br>
                     <div class="row">
@@ -524,29 +502,28 @@
                                 </div>
                             </label>
                             <br><br>
-                            <p>Dropdown element with radio buttons is alternative method of presentation of simple list radio buttons</p>
-                            <ul class="button-dropdown">
-                                <li>
-                                    <a class="button dropdown-arrow">Dropdown radio</a>
-                                    <ul>
-                                        <li>
-                                            <label class="radio-button">
-                                                <input type="radio" name="anyname3" checked="checked">
-                                                <div class="button u-align-left"><i class="material-icons check">&#xE837;</i><i class="material-icons uncheck">&#xE836;</i>Radio first</div>
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <label class="radio-button">
-                                                <input type="radio" name="anyname3">
-                                                <div class="button u-align-left"><i class="material-icons check">&#xE837;</i><i class="material-icons uncheck">&#xE836;</i>Radio second</div>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <p>Extra button is alternative method of presentation of simple list radio buttons.</p>
+                            <div class="extra-button">
+                                <div class="button arrow">Extra radio</div>
+                                <ul>
+                                    <li>
+                                        <label class="radio-button">
+                                            <input type="radio" name="anyname3" checked="checked">
+                                            <div class="button u-align-left"><i class="material-icons check">&#xE837;</i><i class="material-icons uncheck">&#xE836;</i>Radio first</div>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="radio-button">
+                                            <input type="radio" name="anyname3">
+                                            <div class="button u-align-left"><i class="material-icons check">&#xE837;</i><i class="material-icons uncheck">&#xE836;</i>Radio second</div>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="seven columns" roll="definition">
                             <pre><code>
+&lt;!-- Radio buttons --&gt;
 &lt;label class="radio-button"&gt;
     &lt;input type="radio" name="anyname" checked="checked"&gt;
     &lt;div class="button"&gt;
@@ -649,6 +626,7 @@
                             </div>
                         </div>
                         <input class="button-primary" value="Submit" type="submit">
+                        <input value="Reset" type="reset">
                     </form>
                     <div class="row" roll="definition">
                         <div class="twelve columns">
@@ -692,6 +670,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;input class="button-primary" value="Submit" type="submit"&gt;
+    &lt;input class="button-primary" value="Reset" type="reset"&gt;
 &lt;/form&gt;
                             </code></pre>
                         </div>
@@ -705,41 +684,42 @@
                     <p>Groups combining input element with icon, standard, primary color and color icon buttons.</p>
                     <div class="row">
                         <div class="six columns">
+                            <h4>Button group</h4>
+                            <!-- Button group -->
+                            <ul class="group">
+                                <li>
+                                    <a class="button">Anchor button</a>
+                                </li>
+                                <li>
+                                    <button>Button element</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="six columns">
+                            <pre><code>
+&lt;!-- Button group --&gt;
+&lt;ul class="group"&gt;
+    &lt;li&gt;&lt;a class="button"&gt;Anchor button&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns">
                             <h4>Form group</h4>
                             <!-- Form group -->
                             <form>
                                 <ul class="group">
                                     <label>Form group label</label>
                                     <li>
-                                        <input placeholder="Placeholder..." type="text">
+                                        <input class="u-full-width" placeholder="Placeholder..." type="text">
                                     </li>
                                     <li>
                                         <input class="button-primary" value="Submit" type="submit">
                                     </li>
                                 </ul>
                             </form>
-                            <h4>Button group</h4>
-                            <!-- Button group -->
-                            <ul class="group">
-                                <li>
-                                    <ul class="button-dropdown">
-                                        <li>
-                                            <a class="button dropdown-arrow">Anchor button</a>
-                                            <ul>
-                                                <li>
-                                                    <button>Button element</button>
-                                                </li>
-                                                <li>
-                                                    <button>Button element</button>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <button>Button element</button>
-                                </li>
-                            </ul>
                         </div>
                         <div class="six columns">
                             <pre><code>
@@ -751,21 +731,6 @@
         &lt;li&gt;&lt;input class="button-primary" value="Submit" type="submit"&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/form&gt;
-
-&lt;!-- Button group --&gt;
-&lt;ul class="group"&gt;
-    &lt;li&gt;
-        &lt;ul class="button-dropdown"&gt;
-            &lt;li&gt;
-                &lt;a class="button dropdown-arrow"&gt;Anchor button&lt;/a&gt;
-                &lt;ul&gt;
-                    &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;button&gt;Button element&lt;/button&gt;&lt;/li&gt;
-&lt;/ul&gt;
                             </code></pre>
                         </div>
                     </div>
@@ -788,25 +753,23 @@
                             <br><br>
                             <h4>Disabled dropdown buttons</h4>
                             <!-- Disabled dropdown buttons - Set disabled the first level button to disable dropdown button.-->
-                            <ul class="button-dropdown">
-                                <li>
-                                    <button class="dropdown-arrow" disabled>Button element</button>
-                                    <ul>
-                                        <li>
-                                            <button>Button element</button>
-                                        </li>
-                                        <li>
-                                            <a class="button icons-success" href="#"><i class="material-icons">&#xE877;</i>Anchor button</a>
-                                        </li>
-                                        <li>
-                                            <button class="button-primary">Button element</button>
-                                        </li>
-                                        <li>
-                                            <a class="button button-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
+                            <div class="extra-button bottom-left">
+                                <button class="arrow" disabled>Button element</button>
+                                <ul>
+                                    <li>
+                                        <button>Button element</button>
+                                    </li>
+                                    <li>
+                                        <a class="button icons-success" href="#"><i class="material-icons">&#xE877;</i>Anchor button</a>
+                                    </li>
+                                    <li>
+                                        <button class="button-primary">Button element</button>
+                                    </li>
+                                    <li>
+                                        <a class="button button-danger" href="#"><i class="material-icons">&#xE5CD;</i>Anchor button</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="six columns">
                             <pre><code>
@@ -818,14 +781,12 @@
 &lt;input value="submit input" type="submit" <span class="u-color-success">disabled</span>&gt;
 
 
-&lt;!-- Disabled dropdown buttons --&gt;
-&lt;ul class="button-dropdown"&gt;
-    &lt;li&gt;
-        &lt;button class="dropdown-arrow" <span class="u-color-success">disabled</span>&gt;Button element&lt;/button&gt;
-        &lt;ul&gt;
-            &lt;li&gt;...&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/li&gt;
+&lt;!-- Disabled extra buttons --&gt;
+&lt;ul class="extra-button"&gt;
+    &lt;button class="arrow" <span class="u-color-success">disabled</span>&gt;Button element&lt;/button&gt;
+    &lt;ul&gt;
+        &lt;li&gt;...&lt;/li&gt;
+    &lt;/ul&gt;
 &lt;/ul&gt;
                             </code></pre>
                         </div>
