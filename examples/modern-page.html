@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Modern page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/038.css">
+        <style>
+            .ellipsis {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            @media ( max-width: 549px ) {
+                #search {
+                    width: 100%;
+                }
+                
+                #menu:checked ~ * .open-menu,
+                #menu:not(:checked) ~ * .close-menu {
+                    display: none;
+                }
+            }
+        </style>
+        <!-- Adds HTML5 element support for earlier versions of IE -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <input id="menu" type="checkbox">
+        <header class="container">
+            <nav class="nav-primary u-padding-off u-border-off">
+                <a class="u-pull-left brand u-hide-lower-phablet" href="#">
+                    <img src="../img/logo.svg" alt="038">
+                    <h1 class="u-font-xl u-margin-off u-hide-lower-tablet">Modern page</h1>
+                </a>
+                <form id="search" class="u-pull-right">
+                    <ul class="group nav-item">
+                        <li class="u-full-width"><input class="u-full-width" placeholder="Search..." type="search"></li>
+                        <li><button class="icons" type="submit"><i class="material-icons">&#xE8B6;</i></button></li>
+                    </ul>
+                </form>
+            </nav>
+            <div class="nav-standard breadcrumb u-font-s">
+                <a href="#"><i class="material-icons md-18">&#xE88A;</i> Home</a>
+                <a href="#">First menu title</a>
+                <span>Second anchor</span>
+            </div>
+            <div class="u-align-center u-hide-larger-phablet">
+                <label for="menu" class="button button-primary icons">
+                    <i class="open-menu material-icons">&#xE5D2;</i>
+                    <i class="close-menu material-icons">&#xE5CD;</i>
+                </label>
+            </div>
+        </header>
+        <article class="container">
+            <div class="row">
+                <div class="three columns close-menu">
+                    <h2 class="u-hr u-font-m">First menu title</h2>
+                    <p>
+                        <a class="button icons u-border-off u-full-width ellipsis" href="#">First anchor</a>
+                        <a class="button icons u-border-off u-full-width ellipsis u-set-success" href="#">Second anchor</a>
+                        <a class="button icons u-border-off u-full-width ellipsis" href="#">Third anchor</a>
+                    </p>
+                    <h2 class="u-hr u-font-m">Second menu title</h2>
+                    <p>
+                        <a class="button icons u-border-off u-full-width ellipsis" href="#">Fourth anchor</a>
+                        <a class="button icons u-border-off u-full-width ellipsis" href="#">Fifth anchor</a>
+                    </p>
+                </div>
+                <div class="nine columns">
+                    <h2>Second anchor</h2>
+                    <p>Second anchor's content place...</p>
+                </div>
+            </div>
+        </article>
+    </body>
+</html>

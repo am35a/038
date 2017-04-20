@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Discussion UI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <style>
+            .message {
+                display: table;
+                margin-left: 0;
+                margin-right: auto;
+            }
+            .message.starter {
+                margin-left: auto;
+                margin-right: 0;
+            }
+            .message > * {
+                display: table-cell;
+                vertical-align: top;
+            }
+            .message .spacer {
+                width: 25%;
+            }
+            .message .tumb {
+                display: block;
+                width: 4.8rem;
+                height: 4.8rem;
+                background-color: rgba(255, 255, 255, .25);
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 50%;
+            }
+            .message .card.alt {
+                display: table;
+            }
+            .message.starter .card.alt {
+                background-color: teal;
+            }
+
+/* fixsed | start */
+            .editor.u-stick-bottom {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                background-color: #252830;
+                border-top: 1px solid #434857;
+                z-index: 1;
+            }
+            .editor.u-stick-bottom + article {
+                padding-bottom: 13rem;
+            }
+/* fixsed | end */
+        </style>
+        
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/038.css">
+
+        <!-- Adds HTML5 element support for earlier versions of IE -->
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+<!-- fixsed | start -->
+        <section class="editor u-stick-bottom u-full-width">
+            <div class="container">
+                <div class="row">
+                    <form class="ten offset-by-one columns u-padding-10">
+                        <textarea id="scans-description" class="u-full-width" placeholder="Type you message..." type="text" rows="2"></textarea>
+                        <div class="u-align-right">
+                            <button class="icons u-color-primary u-border-off u-background-off u-margin-off u-pull-left"><i class="material-icons">&#xE244;</i></button>
+                            <div class="button icons u-color-primary u-border-off u-background-off u-margin-off u-pull-left">
+                                <input type="file" multiple>
+                                <i class="material-icons">&#xE226;</i>
+                            </div>
+                            <button class="button-primary u-margin-off" type="button"><i class="material-icons">&#xE163;</i>Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+<!-- fixsed | end -->
+
+        <article class="container">
+            <header>
+                <h1>Discussion UI</h1>
+                <p>Simple and responsive messages array:</p>
+            </header>
+            <hr>
+            <section class="message starter">
+                <div class="spacer u-hide-lower-tablet"></div>
+                <div class="u-padding-10 u-align-right">
+                    <b>Your Name</b>
+                    <div class="card alt">
+                        <div class="u-margin-10 u-font-s"><span class="card-date">28 June 2017</span> - <span class="card-time">10:12</span></div>
+                        <div class="u-margin-10 u-align-left">
+                            <img class="u-full-width" src="http://c6.staticflickr.com/8/7490/15618261157_8f70de513c_h.jpg">
+                            Dossimus neque ullam quidem?
+                        </div>
+                    </div>
+                </div>
+                <div><a href="#" class="tumb" style="background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_face_black_24px.svg);"></a></div>
+            </section>
+            <section class="message">
+                <div><a href="#" class="tumb" style="background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_face_black_24px.svg)"></a></div>
+                <div class="u-padding-10">
+                    <b>First Interlocutor</b>
+                    <div class="card alt">
+                        <div class="u-margin-10 u-font-s">
+                            <span class="card-date">28 June 2017</span> - <span class="card-time">10:12</span>
+                            <a href="#" class="u-pull-right"><i class="material-icons">&#xE244;</i></a>
+                        </div>
+                        <div class="u-margin-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe non voluptatibus iure recusandae cumque alias itaque dolor pariatur, deserunt atque repellat quam laudantium, earum adipisci totam beatae, asperiores libero laborum.</div>
+                    </div>
+                    <div class="card alt">
+                        <div class="u-margin-10 u-font-s">
+                            <span class="card-date">28 June 2017</span> - <span class="card-time">10:12</span>
+                            <a href="#" class="u-pull-right"><i class="material-icons">&#xE244;</i></a>
+                        </div>
+                        <div class="u-margin-10">Earum adipisci totam beatae, asperiores libero laborum.</div>
+                    </div>
+                </div>
+                <div class="spacer u-hide-lower-tablet"></div>
+            </section>
+            <section class="message starter">
+                <div class="spacer u-hide-lower-tablet"></div>
+                <div class="u-padding-10 u-align-right">
+                    <b>Your Name</b>
+                    <div class="card alt">
+                        <div class="u-margin-10 u-font-s"><span class="card-date">28 June 2017</span> - <span class="card-time">10:12</span></div>
+                        <div class="u-margin-10 u-align-left">Dolorem obcaecati ipsum, quibusdam sapiente possimus neque ullam, dolore adipisci quas pariatur sint unde ratione quidem!</div>
+                    </div>
+                </div>
+                <div><a href="#" class="tumb" style="background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_face_black_24px.svg);"></a></div>
+            </section>
+            <section class="message">
+                <div><a href="#" class="tumb" style="background-image: url(https://storage.googleapis.com/material-icons/external-assets/v4/icons/svg/ic_face_black_24px.svg);"></a></div>
+                <div class="u-padding-10">
+                    <b>Second Interlocutor</b>
+                    <div class="card alt">
+                        <div class="u-margin-10 u-font-s">
+                            <span class="card-date">28 June 2017</span> - <span class="card-time">10:12</span>
+                            <a href="#" class="u-pull-right"><i class="material-icons">&#xE244;</i></a>
+                        </div>
+                        <div class="u-margin-10"><blockquote class="u-border-primary u-font-s">Lorem ipsum dolor sit amet, consectetur adipisicing elit</blockquote>Beatae sit quis necessitatibus, qui maxime molestias illo amet cumque alias fuga hic officia.</div>
+                    </div>
+                </div>
+                <div class="spacer u-hide-lower-tablet"></div>
+            </section>
+
+<!-- static | start -->
+<!--
+            <hr>
+            <section class="row">
+                <form class="ten offset-by-one columns u-padding-10">
+                    <textarea id="scans-description" class="u-full-width" placeholder="Type you message..." type="text" rows="2"></textarea>
+                    <div class="u-align-right">
+                        <button class="icons u-color-primary u-border-off u-background-off u-pull-left"><i class="material-icons">&#xE244;</i></button>
+                        <button class="icons u-color-primary u-border-off u-background-off u-pull-left"><i class="material-icons">&#xE226;</i></button>
+                        <button class="button-primary" type="button"><i class="material-icons">&#xE163;</i>Send</button>
+                    </div>
+                </form>
+            </section>
+-->
+<!-- static | end -->
+
+        </article>
+    </body>
+</html>

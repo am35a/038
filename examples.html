@@ -7,7 +7,7 @@
         <meta name="description" content="038 the modern, simple and responsive CSS pattern">
         <meta name="keywords" content="html, html5, css, css3, grid, typography, buttons, navbars, forms, front-end, frameworks, lists, cards, tables, utilities">
         <meta name="author" content="Arthur A. Selimov">
-        
+
         <meta property="og:locale"              content="en-EN">
         <meta property="og:type"                content="website">
         <meta property="og:site_name"           content="MOBITOON">
@@ -15,9 +15,9 @@
         <meta property="og:title"               content="038 - CSS pattern examples">
         <meta property="og:description"         content="038 the modern, simple and responsive CSS pattern examples">
         <meta property="og:image"               content="http://038.mobitoon.ru/img/share-logo.png">
-        
+
         <link rel="icon" type="image/png" href="img/favicon.png">
-        
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/038.css">
         <link rel="stylesheet" href="css/style.css">
@@ -28,31 +28,30 @@
     </head>
     <body id="home">
         <header class="u-stick-top">
-            <nav role="navigation">
+            <h1 class="u-hide">038 - The modern, simple and responsive lightweight CSS pattern</h1>
+            <nav class="nav-standard" role="navigation">
                 <div class="container">
-                    <a class="logo" href="index.html#home" target="_self" title="038 home page" role="banner">
+                    <a class="u-pull-left" href="index.html#home" target="_self" title="038 home page" role="banner">
+                        <h2 class="u-hide">038 CSS pattern</h2>
                         <img src="img/logo.svg" alt="038">
                     </a>
-                    <ul>
-                        <li class="nav-dropdown">
-                            <a title="Content list">Content</a>
-                            <ul>
-                                <li><a href="index.html#grid"       target="_self" title="Grid" role="link">Grid</a></li>
-                                <li><a href="index.html#typography" target="_self" title="Typography" role="link">Typography</a></li>
-                                <li><a href="index.html#buttons"    target="_self" title="Buttons" role="link">Buttons</a></li>
-                                <li><a href="index.html#navbars"    target="_self" title="Navbars" role="link">Navbars</a></li>
-                                <li><a href="index.html#forms"      target="_self" title="Forms" role="link">Forms</a></li>
-                                <li><a href="index.html#groups"     target="_self" title="Groups" role="link">Groups</a></li>
-                                <li><a href="index.html#disabling"  target="_self" title="Disabling" role="link">Disabling</a></li>
-                                <li><a href="index.html#lists"      target="_self" title="Lists" role="link">Lists</a></li>
-                                <li><a href="index.html#cards"      target="_self" title="Cards" role="link">Cards</a></li>
-                                <li><a href="index.html#tables"     target="_self" title="Tables" role="link">Tables</a></li>
-                                <li><a href="index.html#utilities"  target="_self" title="Utilities" role="link">Utilities</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="examples.html" target="_self" title="Examples page" role="link">Examples</a></li>
-                        <li class="u-pull-right u-hide-lower-phablet"><a href="http://www.mobitoon.ru" target="_self" title="About developers" role="link">About</a></li>
-                    </ul>
+                    <div class="nav-item nav-extra" title="Content list">Content
+                        <ul>
+                            <li><a href="index.html#grid"       target="_self" title="Grid" role="link">Grid</a></li>
+                            <li><a href="index.html#typography" target="_self" title="Typography" role="link">Typography</a></li>
+                            <li><a href="index.html#buttons"    target="_self" title="Buttons" role="link">Buttons</a></li>
+                            <li><a href="index.html#navbars"    target="_self" title="Navbars" role="link">Navbars</a></li>
+                            <li><a href="index.html#forms"      target="_self" title="Forms" role="link">Forms</a></li>
+                            <li><a href="index.html#groups"     target="_self" title="Groups" role="link">Groups</a></li>
+                            <li><a href="index.html#disabling"  target="_self" title="Disabling" role="link">Disabling</a></li>
+                            <li><a href="index.html#lists"      target="_self" title="Lists" role="link">Lists</a></li>
+                            <li><a href="index.html#cards"      target="_self" title="Cards" role="link">Cards</a></li>
+                            <li><a href="index.html#tables"     target="_self" title="Tables" role="link">Tables</a></li>
+                            <li><a href="index.html#utilities"  target="_self" title="Utilities" role="link">Utilities</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-item" href="examples.html" target="_self" title="Examples page" role="link">Examples</a>
+                    <a class="nav-item u-pull-right u-hide-lower-phablet" href="http://www.mobitoon.ru" target="_self" title="About developers" role="link">About</a>
                 </div>
             </nav>
         </header>
@@ -68,13 +67,49 @@
                 <section role="region">
                     <div class="row">
                         <div class="six columns">
-                            <img class="u-full-width u-border-on" src="img/example-classic-page.png" alt="Classic page example">
+                            <img class="u-full-width" src="img/example-landing-page.png" alt="Classic page example">
                         </div>
                         <div class="six columns">
-                            <h2>Classic page</h2>
-                            <p>This is classic web-page template. To select the active menu item use the utility classes to set background color.</p>
-                            <a class="button" href="examples/classic-page.html" target="_blank" title="Preview classic page" role="link">Preview</a>
-                            <a class="button icons-primary" href="https://raw.githubusercontent.com/am35a/038/master/examples/classic-page.html" target="_blank" title="Classic page source" role="link"><i class="material-icons">&#xE86F;</i>Code</a>
+                            <h2>Landing page</h2>
+                            <p>This example show of how easy it can be to create a responsive landing page with 038 CSS pattern with minimal custom styles.</p>
+                            <a class="button" href="examples/landing-page.html" target="_blank" title="Preview landing page" role="link">Preview</a>
+                            <a class="button icons-primary" href="https://raw.githubusercontent.com/am35a/038/master/examples/landing-page.html" target="_blank" title="Landing page source" role="link"><i class="material-icons">&#xE86F;</i>Code</a>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section role="region">
+                    <div class="row">
+                        <div class="six columns">
+                            <img class="u-full-width u-border-on" src="img/example-modern-page.gif" alt="Classic page example">
+                        </div>
+                        <div class="six columns">
+                            <h2>Modern page</h2>
+                            <p>This is modern, responsive web-page template. There are three media queries for display content on desktop, tablets and mobiles devices.</p>
+                            <a class="button" href="examples/modern-page.html" target="_blank" title="Preview classic page" role="link">Preview</a>
+                            <a class="button icons-primary" href="https://raw.githubusercontent.com/am35a/038/master/examples/modern-page.html" target="_blank" title="Classic page source" role="link"><i class="material-icons">&#xE86F;</i>Code</a>
+                        </div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section role="region">
+                    <div class="row">
+                        <div class="six columns">
+                            <img class="u-full-width u-border-on" src="img/example-discussion-page.png" alt="Classic page example">
+                        </div>
+                        <div class="six columns">
+                            <h2>Discussion page</h2>
+                            <p>
+                                This simple discussion page template has an adaptive design that build amazing UI for mobile apps.
+                                <br>
+                                Inside the code instruction to change message editor position.
+                            </p>
+                            <a class="button" href="examples/discussion-page.html" target="_blank" title="Preview classic page" role="link">Preview</a>
+                            <a class="button icons-primary" href="https://raw.githubusercontent.com/am35a/038/master/examples/discussion-page.html" target="_blank" title="Classic page source" role="link"><i class="material-icons">&#xE86F;</i>Code</a>
                         </div>
                     </div>
                 </section>
@@ -100,13 +135,13 @@
                 <section role="region">
                     <div class="row">
                         <div class="six columns">
-                            <img class="u-full-width" src="img/example-landing-page.png" alt="Classic page example">
+                            <img class="u-full-width u-border-on" src="img/example-classic-page.png" alt="Classic page example">
                         </div>
                         <div class="six columns">
-                            <h2>Landing page</h2>
-                            <p>This example show of how easy it can be to create a responsive landing page with 038 CSS pattern with minimal custom styles.</p>
-                            <a class="button" href="examples/landing-page.html" target="_blank" title="Preview landing page" role="link">Preview</a>
-                            <a class="button icons-primary" href="https://raw.githubusercontent.com/am35a/038/master/examples/landing-page.html" target="_blank" title="Landing page source" role="link"><i class="material-icons">&#xE86F;</i>Code</a>
+                            <h2>Classic page</h2>
+                            <p>This is classic web-page template. To select the active menu item use the utility classes to set background color.</p>
+                            <a class="button" href="examples/classic-page.html" target="_blank" title="Preview classic page" role="link">Preview</a>
+                            <a class="button icons-primary" href="https://raw.githubusercontent.com/am35a/038/master/examples/classic-page.html" target="_blank" title="Classic page source" role="link"><i class="material-icons">&#xE86F;</i>Code</a>
                         </div>
                     </div>
                 </section>
